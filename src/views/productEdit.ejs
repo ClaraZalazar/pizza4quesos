@@ -22,7 +22,7 @@
                                     <div class="mb-3">
                                     <label for="countryName" class="form-label">Pais</label>
                                     <input type="text" class="form-control" id="countryName" name="country"
-                                        value="<%= country %>" required>
+                                        value="<%= product.country %>" required>
                                 </div>
 
                                 <div class="mb-3">
@@ -42,19 +42,19 @@
                                 <div class="mb-3">
                                     <label for="productDescription" class="form-label">Descripción</label>
                                     <textarea class="form-control" id="productDescription" style="resize: none;"
-                                        name="description" required><%= description %></textarea>
+                                        name="description" required><%= product.description %></textarea>
                                 </div>
 
                                 <div class="mb-3">
                                     <label for="productPrice" class="form-label">Precio</label>
                                     <input type="number" class="form-control" id="productPrice" name="price"
-                                        min="0" step="0.01" value="<%= price %>" required>
+                                        min="0" step="0.01" value="<%= product.price %>" required>
                                 </div>
 
                                 <div class="mb-3">
                                     <label for="productDiscount" class="form-label">Descuento</label>
                                     <input type="number" class="form-control" id="productDiscount" name="discount"
-                                        min="0" max="100" value="<%= discount %>" required>
+                                        min="0" max="100" value="<%= product.discount %>" required>
                                 </div>
 
                                 <div class="d-flex justify-content-between mb-3">
