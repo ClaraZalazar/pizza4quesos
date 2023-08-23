@@ -1,0 +1,7 @@
+﻿La tipografía utilizada es Inter: 
+https://fonts.google.com/specimen/Inter.
+Esta tipografía fue diseñada por Rasmus Andersson
+Utilizamos diversos tamaños como por ejemplo: 40, 32, 20; en los siguientes estilos: ligth, semibold y bols 
+También se utilizó la tipografía Poppins. Creada por Jonny Pinhorn
+https://fonts.google.com/specimen/Poppins?query=Jonny+Pinhorn
+

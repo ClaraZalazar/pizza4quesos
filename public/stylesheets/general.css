@@ -1,0 +1,22 @@
+:root {
+    --Celeste: #1259c3;
+    --Grisoscuro: #666;
+    --Grisclaro: #ebebeb;
+    --Verde: #39b54a;
+    --tipoGrafia: "Roboto", sans-serif;
+    --colorPrincipal: #1D4D8B;
+    --colorSecundario: #FEBB02;
+    --tipografia: 'Inter', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--tipografia);
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}

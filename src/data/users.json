@@ -1,0 +1,93 @@
+[
+    {
+       "id": "1",
+       "firstName": "María",
+       "lastName": "González",
+       "email": "maria@example.com",
+       "password": "amoMiHijo",
+       "category": "standard",
+       "image": "PERFIL-VACIO.png"
+    },
+    {
+       "id": "2",
+       "firstName": "Juan",
+       "lastName": "Martínez",
+       "email": "juan@example.com",
+       "password": "amoProgramar",
+       "category": "premium",
+       "image": "PERFIL-VACIO.png"
+    },
+    {
+       "id": "3",
+       "firstName": "Mónica",
+       "lastName": "López",
+       "email": "monica@example.com",
+       "password": "amoMiEsposo",
+       "category": "standard",
+       "image": "PERFIL-VACIO.png"
+    },
+    {
+       "id": "4",
+       "firstName": "Francisco",
+       "lastName": "Rodríguez",
+       "email": "francisco@example.com",
+       "password": "amoMiFamilia",
+       "category": "standard",
+       "image": "PERFIL-VACIO.png"
+    },
+    {
+       "id": "5",
+       "firstName": "Carmen",
+       "lastName": "Fernández",
+       "email": "carmen@example.com",
+       "password": "amoComer",
+       "category": "premium",
+       "image": "PERFIL-VACIO.png"
+    },
+    {
+       "id": "6",
+       "firstName": "Leo",
+       "lastName": "Díaz",
+       "email": "leo@example.com",
+       "password": "meEncantaElFernet",
+       "category": "standard",
+       "image": "PERFIL-VACIO.png"
+    },
+    {
+       "id": "7",
+       "firstName": "Rodrigo",
+       "lastName": "Gómez",
+       "email": "rodrigo@example.com",
+       "password": "meEncantaElAzul",
+       "category": "standard",
+       "image": "PERFIL-VACIO.png"
+    },
+    {
+       "id": "8",
+       "firstName": "Carolina",
+       "lastName": "Pérez",
+       "email": "carolina@example.com",
+       "password": "amoLaMilanesa",
+       "category": "premium",
+       "image": "PERFIL-VACIO.png"
+    },
+    {
+       "id": "9",
+       "firstName": "Sandra",
+       "lastName": "Alvarez",
+       "email": "sandra@example.com",
+       "password": "amoViajar",
+       "category": "standard",
+       "image": "PERFIL-VACIO.png"
+    },
+    {
+       "id": "10",
+       "firstName": "Mateo",
+       "lastName": "Ramos",
+       "email": "mateo@example.com",
+       "password": "amoMiPerro",
+       "category": "standard",
+       "image": "PERFIL-VACIO.png"
+    }
+ ]
+ 

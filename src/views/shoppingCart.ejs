@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head',{
+        title: 'Cart'
+    }) %>
+
+<body>
+    <!-- header -->
+    <%- include('./partials/header') %>
+    <!-- cuerpo de pagina -->
+    <main class="contenedor-carrito">
+        <div class="carrito">
+            <div class="div__carrito">
+                <h1> Carrito de compras</h1>
+                <h2>Tiene 3 articulos en su carrito</h2>
+            </div>
+            <div class="carrito__items">
+                <div class="carrito__item">
+                    <img src="/images/argentinoHotel.jpg" alt=""width="400px">
+                    <div class="carrito__item__detalles">
+                        <h2>Argentino Hotel</h2>
+                        <p>Mar Del Plata</p>
+                        <div class="selector__cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <p class="carrito__item__cantidad">1</p>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito__item__precio">$13.500</span>
+                    </div>
+                    <span class="boton__eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                    </span>
+                </div>
+                    <div class="carrito__item">
+                        <img src="/images/riberaSurHotel.jpg" alt=""width="400px">
+                        <div class="carrito__item__detalles">
+                            <h2>Ribera Sur Hotel</h2>
+                            <p>San Telmo</p>
+                            <div class="selector__cantidad">
+                                <i class="fa-solid fa-minus restar-cantidad"></i>
+                                <p class="carrito__item__cantidad">1</p>
+                                <i class="fa-solid fa-plus sumar-cantidad"></i>
+                            </div>
+                            <span class="carrito__item__precio">$33.600</span>
+                        </div>
+                        <span class="boton__eliminar">
+                            <i class="fa-solid fa-trash"></i>
+                        </span>
+                    </div>
+                    <div class="carrito__item">
+                        <img src="/images/hotelTresReyes.jpg" alt="">
+                        <div class="carrito__item__detalles">
+                            <h2>Hotel Tres Reyes</h2>
+                            <p>San Carlos de Bariloche</p>
+                            <div class="selector__cantidad">
+                                <i class="fa-solid fa-minus restar-cantidad"></i>
+                                <p class="carrito__item__cantidad">1</p>
+                                <i class="fa-solid fa-plus sumar-cantidad"></i>
+                            </div>
+                            <span class="carrito__item__precio">$50.000</span>
+                        </div>
+                        <span class="boton__eliminar">
+                            <i class="fa-solid fa-trash"></i>
+                        </span>
+                    </div>
+            </div>
+            <div class="carrito__total">
+                <div class="fila">
+                    <strong>Total</strong>
+                    <span class="carrito__precio__total">$97.100,00</span>
+                </div>
+                <button class="boton__comprar">Comprar</i></button>
+            </div>
+        </div>
+    </main>
+    <!-- footer -->
+    <%- include('./partials/footer') %>
+</body>
+</html>

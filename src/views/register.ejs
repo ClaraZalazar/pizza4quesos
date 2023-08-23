@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- head -->
+    <%- include('./partials/head',{
+        title : 'Register'
+    }) %>
+
+<body>
+    <!-- header -->
+    <%- include('./partials/header') %>
+    
+    <!-- cuerpo de pagina -->
+    <main class="main__register">
+        <div class="caja__container">
+            <div class="div__container">
+                <h1>Creá tu cuenta</h1>
+                <form action="">
+                    <div class="div__form">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" required="" pattern="[A-Z , a-z]">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" required="" pattern="[A-Z , a-z]">
+                        <label for="email">Correo</label>
+                        <input type="email" id="email" required="" pattern="[A-Z , a-z,@,1-9999]">
+                        <p>Acedé con el mail que realizaste la compra</p>
+                        <label for="contraseña">Contraseña</label>
+                        <input type="password" id="contraseña" required="" pattern="[A-Z , a-z,@,1-9999]">
+                        <p>Usá entre 8 y 16 carácteres.</p>
+                    </div>
+                    <div class="boton__registro">
+                        <button type="submit"><a href="/">Registrate</a></button>
+                    </div>
+                </form>
+                <div class="registrer__redsocial">
+                    <p>Al registrarte aceptas los <a href="">Terminos y condiciones</a></p>
+                    <h4>¡Chau contraseña! Ingresa con un solo paso.</h4>
+                    <ul>
+                        <li><i class="fab fa-facebook"></i><a href="">Ingresa con Facebook</a></li>
+                        <li><i class="fab fa-google"></i><a href="">Ingresa con Google</a></li>
+                    </ul>
+                </div>
+                <div class="cuenta">
+                    <p>¿Ya tenés cuenta?</p>
+                    <button><a href="/users/login">Ingresar</a></button>
+                </div>
+            </div>
+        </div>
+    </main>
+<!-- footer -->
+<%- include('partials/footer') %>
+
+</body>
+</html>

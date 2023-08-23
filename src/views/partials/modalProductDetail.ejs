@@ -1,0 +1,54 @@
+<div class="modal fade" id="modalDetail<%= id %>"
+    tabindex="-1"
+    aria-labelledby="modalDetailLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title"
+                    id="modalDetailLabel">
+                    <%= hotel %> - <%= place %>
+                </h4>
+                <button type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <img src="/images/<%= image %>"
+                            class="img-fluid"
+                            alt="<%= hotel %>">
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <h2><%= price %></h2>
+                        <p><%= description %></p>
+                        <p><strong>Descuento:</strong> <%= discount %></p>
+                        <p><strong>Vuelos:</strong></p>
+                        <ul>
+                            <% flight.forEach(f => { %>
+                            <li><%= f %></li>
+                            <% }) %>
+                        </ul>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle"
+                                type="button" id="optionsDropdown<%= id %>"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Opciones
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="optionsDropdown<%= id %>">
+                                <li><a class="dropdown-item"
+                                        href="/products/detail/<%= id %>">Ver producto</a></li>
+                                <li><a class="dropdown-item"
+                                        href="/products/edit/<%= id %>">Editar producto</a></li>
+                                <li><a class="dropdown-item"
+                                        href="/products/delete/<%= id %>">Eliminar producto</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

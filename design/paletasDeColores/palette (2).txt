@@ -1,0 +1,30 @@
+/* Coolors Exported Palette - https://coolors.co/ffffff-e3e3e3-c6c6c6-aaaaaa-8e8e8e-717171-555555-393939-1c1c1c-000000 */
+
+/* CSV */
+ffffff,e3e3e3,c6c6c6,aaaaaa,8e8e8e,717171,555555,393939,1c1c1c,000000
+
+/* With # */
+#ffffff, #e3e3e3, #c6c6c6, #aaaaaa, #8e8e8e, #717171, #555555, #393939, #1c1c1c, #000000
+
+/* Array */
+["ffffff","e3e3e3","c6c6c6","aaaaaa","8e8e8e","717171","555555","393939","1c1c1c","000000"]
+
+/* Object */
+{"White":"ffffff","Platinum":"e3e3e3","Silver":"c6c6c6","Silver 2":"aaaaaa","Battleship gray":"8e8e8e","Dim gray":"717171","Davy's gray":"555555","Jet":"393939","Eerie black":"1c1c1c","Black":"000000"}
+
+/* Extended Array */
+[{"name":"White","hex":"ffffff","rgb":[255,255,255],"cmyk":[0,0,0,0],"hsb":[0,0,100],"hsl":[0,0,100],"lab":[100,0,0]},{"name":"Platinum","hex":"e3e3e3","rgb":[227,227,227],"cmyk":[0,0,0,11],"hsb":[0,0,89],"hsl":[0,0,89],"lab":[90,0,0]},{"name":"Silver","hex":"c6c6c6","rgb":[198,198,198],"cmyk":[0,0,0,22],"hsb":[0,0,78],"hsl":[0,0,78],"lab":[80,0,0]},{"name":"Silver","hex":"aaaaaa","rgb":[170,170,170],"cmyk":[0,0,0,33],"hsb":[0,0,67],"hsl":[0,0,67],"lab":[70,0,0]},{"name":"Battleship gray","hex":"8e8e8e","rgb":[142,142,142],"cmyk":[0,0,0,44],"hsb":[0,0,56],"hsl":[0,0,56],"lab":[59,0,0]},{"name":"Dim gray","hex":"717171","rgb":[113,113,113],"cmyk":[0,0,0,56],"hsb":[0,0,44],"hsl":[0,0,44],"lab":[48,0,0]},{"name":"Davy's gray","hex":"555555","rgb":[85,85,85],"cmyk":[0,0,0,67],"hsb":[0,0,33],"hsl":[0,0,33],"lab":[36,0,0]},{"name":"Jet","hex":"393939","rgb":[57,57,57],"cmyk":[0,0,0,78],"hsb":[0,0,22],"hsl":[0,0,22],"lab":[24,0,0]},{"name":"Eerie black","hex":"1c1c1c","rgb":[28,28,28],"cmyk":[0,0,0,89],"hsb":[0,0,11],"hsl":[0,0,11],"lab":[10,0,0]},{"name":"Black","hex":"000000","rgb":[0,0,0],"cmyk":[0,0,0,100],"hsb":[0,0,0],"hsl":[0,0,0],"lab":[0,0,0]}]
+
+/* XML */
+<palette>
+  <color name="White" hex="ffffff" r="255" g="255" b="255" />
+  <color name="Platinum" hex="e3e3e3" r="227" g="227" b="227" />
+  <color name="Silver" hex="c6c6c6" r="198" g="198" b="198" />
+  <color name="Silver" hex="aaaaaa" r="170" g="170" b="170" />
+  <color name="Battleship gray" hex="8e8e8e" r="142" g="142" b="142" />
+  <color name="Dim gray" hex="717171" r="113" g="113" b="113" />
+  <color name="Davy's gray" hex="555555" r="85" g="85" b="85" />
+  <color name="Jet" hex="393939" r="57" g="57" b="57" />
+  <color name="Eerie black" hex="1c1c1c" r="28" g="28" b="28" />
+  <color name="Black" hex="000000" r="0" g="0" b="0" />
+</palette>

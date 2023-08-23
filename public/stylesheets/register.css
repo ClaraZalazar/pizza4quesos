@@ -1,0 +1,527 @@
+.div__container h1 {
+    margin: 10px 0px;
+    color: #000;
+}
+.caja__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main__register {
+    background-image: url("/images/jong-marshes-79mNMAvSORg-unsplash.jpg");
+    padding-bottom: 30px;
+    padding-top: 2rem;
+}
+
+.div__container {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 0px 15px;
+    justify-content: space-around;
+}
+
+.div__form {
+    color: var(--Grisoscuro);
+    border-radius: 30px;
+    margin: 0px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.div__form p {
+    margin-bottom: 20px;
+}
+
+.div__form input {
+    margin: 10px 0px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid var(--Grisclaro);
+    border-radius: 10px;
+    border-radius: 5px;
+}
+
+.boton__registro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton__registro button {
+    background-color: var(--Grisclaro);
+    color: black;
+    margin: 20px 15px;
+    width: 100%;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+}
+
+.boton__registro a {
+    color: #000;
+    font-weight: 700;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.usuario p a {
+    color: black;
+    font-weight: 600;
+    padding: 10px 0px;
+}
+
+
+
+.registrer__redsocial {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px 15px;
+
+
+}
+
+.registrer__redsocial h4 {
+    color: var(--Grisoscuro);
+    margin-bottom: 15px;
+
+
+}
+
+.registrer__redsocial p {
+    color: var(--Grisoscuro);
+    text-align: left;
+    margin: 0px 0px 15px 0px;
+}
+
+.registrer__redsocial p a {
+    color: lightseagreen;
+}
+
+.registrer__redsocial ul li {
+    border: 1px solid var(--Grisclaro);
+    border-radius: 50px;
+    margin-bottom: 5px;
+    padding: 10px 20px;
+    width: 100%;
+    text-align: center;
+    list-style: none;
+}
+
+.registrer__redsocial ul li i {
+    text-align: left;
+    margin-right: 30px;
+    font-size: 20px;
+}
+
+.fa-facebook {
+    color: var(--Celeste);
+}
+
+.fa-google {
+    color: brown;
+
+}
+
+.registrer__redsocial ul li a {
+    color: black;
+
+}
+
+.cuenta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 20px;
+    padding: 10px;
+    width: 100%;
+}
+
+.cuenta button {
+    width: 100%;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+     width: 100%;
+}
+
+.cuenta p {
+    display: flex;
+    justify-content: left;
+    margin: 0px 0px 15px 0px;
+}
+
+.cuenta a {
+    color: #000;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.boton__registro button:hover {
+    background-color: rgba(100, 100, 100, 0.5);
+    border: 2px solid var(--Celeste);
+}
+
+.cuenta button:hover {
+    background-color: rgba(100, 100, 100, 0.5);
+    border: 2px solid var(--Celeste);
+}
+
+
+@media (min-width:768px) {
+    .div__container h1 {
+        margin: 10px 0px;
+        color: #000;
+    }
+
+    .caja__container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .div__container {
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 10px;
+        margin: 0px 15px;
+        width: 478px;
+        justify-content: space-around;
+
+    }
+
+    .div__form {
+        color: var(--Grisoscuro);
+        border-radius: 30px;
+        margin: 0px 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+
+    .div__form p {
+        margin-bottom: 20px;
+    }
+
+    .div__form input {
+        margin: 10px 0px;
+        width: 100%;
+        height: 50px;
+        border: 1px solid var(--Grisclaro);
+        border-radius: 10px;
+        border-radius: 5px;
+    }
+
+    .boton__registro {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .boton__registro button {
+        background-color: var(--Grisclaro);
+        color: black;
+        margin: 20px 15px;
+        width: 100%;
+        height: 40px;
+        border-radius: 50px;
+        border: none;
+    }
+
+    .boton__registro a {
+        color: #000;
+        font-weight: 700;
+        width: 100%;
+        text-transform: uppercase;
+    }
+
+    .usuario p a {
+        color: black;
+        font-weight: 600;
+        padding: 10px 0px;
+    }
+
+
+
+    .registrer__redsocial {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        margin: 15px 15px;
+        width: 60%;
+
+    }
+
+    .registrer__redsocial h4 {
+        color: var(--Grisoscuro);
+        margin-bottom: 15px;
+
+
+    }
+
+    .registrer__redsocial p {
+        color: var(--Grisoscuro);
+        text-align: left;
+        margin: 0px 0px 15px 0px;
+    }
+
+    .registrer__redsocial p a {
+        color: lightseagreen;
+    }
+
+    .registrer__redsocial ul li {
+        border: 1px solid var(--Grisclaro);
+        border-radius: 50px;
+        margin-bottom: 5px;
+        padding: 10px 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .registrer__redsocial ul li i {
+        text-align: left;
+        margin-right: 30px;
+        font-size: 20px;
+    }
+
+    .fa-facebook {
+        color: var(--Celeste);
+    }
+
+    .fa-google {
+        color: brown;
+
+    }
+
+    .registrer__redsocial ul li a {
+        color: black;
+
+    }
+
+    .cuenta {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 20px;
+        padding: 10px;
+        width: 60%;
+    }
+
+    .cuenta button {
+        width: 100%;
+        height: 40px;
+        border-radius: 50px;
+        border: none;
+    }
+
+    .cuenta p {
+        display: flex;
+        justify-content: left;
+        margin: 0px 0px 15px 0px;
+    }
+
+    .cuenta a {
+        color: #000;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .boton__registro button:hover {
+        background-color: rgba(100, 100, 100, 0.5);
+        border: 2px solid var(--Celeste);
+    }
+
+    .cuenta button:hover {
+        background-color: rgba(100, 100, 100, 0.5);
+        border: 2px solid var(--Celeste);
+    }
+
+}
+
+@media(min-width:1024px){
+    .div__container h1 {
+        margin: 10px 0px;
+        color: #000;
+    }
+
+    .caja__container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .div__container {
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 10px;
+        margin: 0px 15px;
+        width: 478px;
+        justify-content: space-around;
+
+    }
+
+    .div__form {
+        color: var(--Grisoscuro);
+        border-radius: 30px;
+        margin: 0px 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+
+    .div__form p {
+        margin-bottom: 20px;
+    }
+
+    .div__form input {
+        margin: 10px 0px;
+        width: 100%;
+        height: 50px;
+        border: 1px solid var(--Grisclaro);
+        border-radius: 10px;
+        border-radius: 5px;
+    }
+
+    .boton__registro {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .boton__registro button {
+        background-color: var(--Grisclaro);
+        color: black;
+        margin: 20px 15px;
+        width: 100%;
+        height: 40px;
+        border-radius: 50px;
+        border: none;
+    }
+
+    .boton__registro a {
+        color: #000;
+        font-weight: 700;
+        width: 100%;
+        text-transform: uppercase;
+    }
+
+    .usuario p a {
+        color: black;
+        font-weight: 600;
+        padding: 10px 0px;
+    }
+
+
+
+    .registrer__redsocial {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+       margin-left: 10px;
+        width: 60%;
+
+    }
+
+    .registrer__redsocial h4 {
+        color: var(--Grisoscuro);
+        margin-bottom: 15px;
+
+
+    }
+
+    .registrer__redsocial p {
+        color: var(--Grisoscuro);
+        text-align: left;
+        margin: 0px 0px 15px 0px;
+    }
+
+    .registrer__redsocial p a {
+        color: lightseagreen;
+    }
+
+    .registrer__redsocial ul li {
+        border: 1px solid var(--Grisclaro);
+        border-radius: 50px;
+        margin-bottom: 5px;
+        padding: 10px 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .registrer__redsocial ul li i {
+        text-align: left;
+        margin-right: 30px;
+        font-size: 20px;
+    }
+
+    .fa-facebook {
+        color: var(--Celeste);
+    }
+
+    .fa-google {
+        color: brown;
+
+    }
+
+    .registrer__redsocial ul li a {
+        color: black;
+
+    }
+
+    .cuenta {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 20px;
+        padding: 10px;
+        width: 60%;
+    }
+
+    .cuenta button {
+        width: 100%;
+        height: 40px;
+        border-radius: 50px;
+        border: none;
+    }
+
+    .cuenta p {
+        display: flex;
+        justify-content: left;
+        margin: 0px 0px 15px 0px;
+    }
+
+    .cuenta a {
+        color: #000;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .boton__registro button:hover {
+        background-color: rgba(100, 100, 100, 0.5);
+        border: 2px solid var(--Celeste);
+    }
+
+    .cuenta button:hover {
+        background-color: rgba(100, 100, 100, 0.5);
+        border: 2px solid var(--Celeste);
+    }
+
+}

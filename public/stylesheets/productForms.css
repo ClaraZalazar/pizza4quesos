@@ -1,0 +1,311 @@
+.container__box {
+    display: flex;
+    padding: 40px 16px 24px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.h2 {
+    margin: 10px 0px;
+    color: #000;
+    text-align: center;
+}
+
+.main__login {
+    background-image: url("/images/jong-marshes-79mNMAvSORg-unsplash.jpg");
+}
+.login ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login .terminos{
+    color: lightseagreen;
+}
+
+.form-box {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 0px 15px;
+    justify-content: space-around;
+}
+
+.inputbox {
+    color: var(--Grisoscuro);
+    border-radius: 30px;
+    margin: 0px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.inputbox input {
+    margin: 10px 0px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid var(--Grisclaro);
+    border-radius: 10px;
+    border-radius: 5px;
+}
+
+.bottons__login {
+    display: block;
+    margin: 10px 15px;
+}
+
+.botton__login button {
+    color: #000;
+    background-color: var(--Grisclaro);
+    font-family: var(--tipoGrafia);
+    text-transform: uppercase;
+    font-weight: 900;
+    border-radius: 50px;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+.botton__login button:hover{
+    background-color: rgba(100, 100, 100, 0.5);
+    border: 2px solid var(--Celeste);
+}
+.bottons__login--register{
+    padding-bottom: 1rem;
+}
+.bottons__login--register a{
+    color: #000;
+}
+.usuario p a {
+    color: black;
+    font-weight: 600;
+    padding: 10px 0px;
+}
+
+.forget__checkbox {
+    margin: 20px 15px;
+}
+
+div.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.login ul li {
+    border: 1px solid var(--Grisclaro);
+    font-weight: 700;
+    border-radius: 50px;
+    margin-bottom: 5px;
+    padding: 10px;
+    width: 70%;
+    text-align: center;
+}
+
+.login ul li i {
+    text-align: left;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.fa-facebook {
+    color: var(--Celeste);
+}
+
+.fa-google {
+    color: brown;
+}
+
+.login ul li a {
+    color: black;
+}
+
+div.login h4 {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 0 16px;
+    text-align: center;
+}
+
+div .login p {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--Grisoscuro);
+    text-align: left;
+    margin: 0px 0px 15px 0px;
+    text-align: center;
+}
+
+.bottons__login--register button {
+    font-family: var(--tipoGrafia);
+    text-transform: uppercase;
+    font-weight: 900;
+    width: 100%;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    margin: 5px 0;
+    background-color: var(--Grisclaro);
+    cursor: pointer;
+}
+
+.boton__log:hover,
+.bottons__login--register button:hover {
+    border: 2px solid var(--Celeste);
+}
+
+@media (min-width:768px) {
+    .container__box {
+        display: flex;
+        padding: 40px 16px 24px;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    h2 {
+        margin: 10px 0px;
+        color: var(--Grisoscuro);
+    }
+
+    .form-box {
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 10px;
+        margin: 0px 15px;
+        width: 478px;
+        justify-content: space-around;
+    }
+
+    .form-value {
+        color: var(--Grisoscuro);
+        border-radius: 30px;
+        margin: 0px 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .form-value input {
+        margin: 10px 0px;
+        border: 1px solid var(--Grisclaro);
+        border-radius: 10px;
+        border-radius: 5px;
+    }
+
+    .botton__login {
+        font-family: var(--tipoGrafia);
+        text-transform: uppercase;
+        font-weight: 900;
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+        height: 40px;
+        border-radius: 50px;
+        border: none;
+    }
+
+    .usuario p {
+        color: black;
+        font-weight: 600;
+        padding: 10px 0px;
+    }
+
+    .fa-facebook {
+        color: var(--Celeste);
+    }
+
+    .fa-google {
+        color: brown;
+    }
+    .boton__log:hover,
+    .bottons__login--register button:hover {
+        background-color: rgba(100, 100, 100, 0.5);
+        border: 2px solid var(--Celeste);
+    }
+}
+
+@media(min-width:1024px) {
+
+    .container__box {
+        display: flex;
+        padding: 40px 16px 24px;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    h2 {
+        margin: 10px 0px;
+        color: var(--Grisoscuro);
+    }
+
+    .form-box {
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 10px;
+        margin: 0px 15px;
+        width: 478px;
+        justify-content: space-around;
+    }
+
+    .form-value {
+        color: var(--Grisoscuro);
+        border-radius: 30px;
+        margin: 0px 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .form-value input {
+        margin: 10px 0px;
+        border: 1px solid var(--Grisclaro);
+        border-radius: 10px;
+        border-radius: 5px;
+    }
+
+    .botton__login {
+        color: var(--Grisoscuro);
+        font-family: var(--tipoGrafia);
+        text-transform: uppercase;
+        font-weight: 900;
+        border-radius: 50px;
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+        height: 40px;
+        border-radius: 50px;
+        border: none;
+    }
+
+    .usuario p {
+        color: black;
+        font-weight: 600;
+        padding: 10px 0px;
+    }
+
+    .fa-facebook {
+        color: var(--Celeste);
+    }
+
+    .fa-google {
+        color: brown;
+    }
+    .boton__log:hover,
+    .bottons__login--register button:hover {
+        background-color: rgba(100, 100, 100, 0.5);
+        border: 2px solid var(--Celeste);
+        }
+}

@@ -1,0 +1,101 @@
+/* Estilos generales */
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+.product__container {
+    width: 80%;
+    margin: 4rem auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.product__image {
+    padding: 20px;
+    height: 23rem;
+    background-image: url('/images/riberaSurHotel.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+    border-radius: 10px 0px 0px 10px;
+}
+
+.product__details {
+    padding: 20px;
+    background-color: #f2f2f2;
+    display: flex;
+    height: 23rem;
+    flex-direction: column;
+    border-radius: 0px 10px 10px 0px;
+}
+.product__title {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.product__title-rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product__rating {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #FEBB02; 
+}
+
+.product__star-gray {
+    color: #808080; 
+}
+
+.product__price strong {
+    font-weight: bold; 
+}
+
+.product__description {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center; 
+}
+
+.product__additional-info {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #555;
+    text-align: center;
+}
+
+.product__button {
+    background-color: #FEBB02;
+    color: white;
+    border: none;
+    padding: 6px 0px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+@media (min-width:320px){
+    .product__container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .product__image {
+        width: 90%;
+        border-radius: 10px 10px 0px 0px;
+    }
+    .product__details {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        border-radius: 0px 0px 10px 10px;
+    }
+}

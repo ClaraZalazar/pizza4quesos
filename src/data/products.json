@@ -1,0 +1,102 @@
+[
+   {
+      "id": 1,
+      "country": "Francia",
+      "hotel": "lorem",
+      "flight": ["sin escala", "con escala"],
+      "description": "Lorem ipsum dolor amet sit",
+      "price": 300,
+      "discount": 15,
+      "image": "card1.png"
+   },
+   {
+      "id": 2,
+      "country": "Estados Unidos",
+      "hotel": "lorem",
+      "flight": ["sin escala", "con escala"],
+      "description": "Lorem ipsum dolor amet sit",
+      "price": 500,
+      "discount": 10,
+      "image": "card1.png"
+   },
+   {
+      "id": 3,
+      "country": "Italia",
+      "hotel": "lorem",
+      "flight": ["sin escala", "con escala"],
+      "description": "Lorem ipsum dolor amet sit",
+      "price": 350,
+      "discount": 20,
+      "image": "card1.png"
+   },
+   {
+      "id": 4,
+      "country": "Japón",
+      "hotel": "lorem",
+      "flight": ["sin escala", "con escala"],
+      "description": "Lorem ipsum dolor amet sit",
+      "price": 200,
+      "discount": 10,
+      "image": "card1.png"
+   },
+   {
+      "id": 5,
+      "country": "Argentina",
+      "hotel": "lorem",
+      "flight": ["sin escala", "con escala"],
+      "description": "Lorem ipsum dolor amet sit",
+      "price": 150,
+      "discount": 10,
+      "image": "card1.png"
+   },
+   {
+      "id": 6,
+      "country": "Grecia",
+      "hotel": "lorem",
+      "flight": ["sin escala", "con escala"],
+      "description": "Lorem ipsum dolor amet sit",
+      "price": 400,
+      "discount": 15,
+      "image": "card1.png"
+   },
+   {
+      "id": 7,
+      "country": "Australia",
+      "hotel": "lorem",
+      "flight": ["sin escala", "con escala"],
+      "description": "Lorem ipsum dolor amet sit",
+      "price": 450,
+      "discount": 10,
+      "image": "card1.png"
+   },
+   {
+      "id": 8,
+      "country": "Costa Rica",
+      "hotel": "lorem",
+      "flight": ["sin escala", "con escala"],
+      "description": "Lorem ipsum dolor amet sit",
+      "price": 250,
+      "discount": 10,
+      "image": "card1.png"
+   },
+   {
+      "id": 9,
+      "country": "Panamá",
+      "hotel": "lorem",
+      "flight": ["sin escala", "con escala"],
+      "description": "Lorem ipsum dolor amet sit",
+      "price": 280,
+      "discount": 15,
+      "image": "card1.png"
+   },
+   {
+      "id": 10,
+      "country": "Panamá",
+      "hotel": "lorem",
+      "flight": ["sin escala", "con escala"],
+      "description": "Lorem ipsum dolor amet sit",
+      "price": 280,
+      "discount": 15,
+      "image": "card1.png"
+   }
+]

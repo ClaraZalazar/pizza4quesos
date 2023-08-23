@@ -1,0 +1,47 @@
+.main-footer{
+    background: var(--colorPrincipal);
+    color: white;
+    padding: 30px 20px;
+  }
+  .footer__title{
+    border-bottom: 1px dotted #555;
+    color: #fff;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  .footer__txt {
+    color: #fff;
+    text-align: center;
+  }
+  .footer__link{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  .footer__input{
+    background: #fff;
+    width: 100%;
+    display: block;
+    padding: 20px;
+    border: 1px solid #555;
+  }
+  .copy {
+    color: #fff;
+  }
+  
+  /*Estilos para web*/
+
+@media screen and (min-width:1024px) { 
+    .main-footer {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 20px;
+    }
+    .copy {
+      grid-column-start: span 4;
+      text-align: center;
+    }
+  }

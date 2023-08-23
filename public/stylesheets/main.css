@@ -1,0 +1,594 @@
+/* Estilos main */
+/* Banner */
+main .contenedor{
+    background-color: var(--colorPrincipal);
+    z-index: 1;
+    position: relative;
+}
+/* se ve solo en desktop */
+main .contenedor .buscador{
+    display: none;
+}
+main .contenedor .banner{
+    width: 90%;
+    margin: auto;
+    position: relative;
+    top: 10px;
+}
+/* carrusel banner solo se ve en desktop */
+main .contenedor .txt-carrusel-banner-desk{
+    display: none;
+}
+main .banner .destinos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .banner .destinos p{
+    color: #fff;
+    margin: 0rem 1rem;
+    padding: 0rem 0.2rem;
+    font-size: 0.7rem;
+    border: 1px solid #fff;
+    border-radius: 2rem;
+}
+main .banner .vuelos{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+main .banner .vuelos .argentina{
+    text-align: center;
+    background-color: #fff;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    width: 70%;
+    height: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main .banner .vuelos .argentina .bue{
+    font-size: 1rem;
+    font-weight: 600;
+}
+main .banner .vuelos .argentina p{
+    margin-bottom: 0;
+    font-size: 0.8rem;
+}
+main .banner .vuelos .brasil{
+    text-align: center;
+    background-color: #fff;
+    margin-bottom: 1rem;
+    width: 70%;
+    height: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main .banner .vuelos .brasil .rio{
+    font-size: 1rem;
+    font-weight: 600;
+}
+main .banner .vuelos .brasil p{
+    margin-bottom: 0;
+    font-size: 0.8rem;
+}
+main .banner .formas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .banner .formas .calendario{
+    text-align: center;
+    background-color: #fff;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    height: 3.2rem;
+}
+main .banner .formas .calendario p{
+    margin-bottom: 0;
+}
+main .banner .formas .pasajeros{
+    text-align: center;
+    background-color: #fff;
+    margin-bottom: 1rem;
+    width: 70%;
+    height: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main .banner .formas .pasajeros .pasajero{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000;
+}
+main .banner .formas .pasajeros p{
+    margin-bottom: 0;
+    font-size: 0.8rem;
+    color: #bdbaba;
+}
+main .banner .formas .calendario p{
+    color: #bdbaba;
+    font-size: 0.8rem;
+}
+main .banner .formas .calendario .ida{
+    padding-right: 1rem;
+    border-right: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main .banner .formas .calendario .ida i{
+    color: #bdbaba;
+    font-size: 2rem;
+}
+main .banner .formas .calendario .vuelta{
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main .banner .formas .calendario .vuelta i{
+    color: #bdbaba;
+    font-size: 2rem;
+}
+/* BOTON BUSCAR */
+main .banner .contenedor-boton{
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem 0rem;
+}
+main .banner .contenedor-boton button{
+    border: none;
+    background-color: var(--colorSecundario);
+    border-radius: 1rem;
+    padding: 0.2rem 1rem;
+}
+/* ESTILOS DE SLIDER BANNER DESKTOP*/
+.container-slider{
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slider {
+    display: flex;
+    width: 400%;
+    height: 300px;
+    margin-left: -100%;
+    position: relative;
+  }
+  .slider:before{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    height: 100%;
+  }
+  
+  .slider__section {
+    width: 100%;
+    position: relative;
+  }
+  .slider__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .slider__btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.7);
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 999;
+  }
+  .slider__btn:hover {
+    background: #fff;
+  }
+  .slider__btn--left{
+    left: 10px;
+  }
+  .slider__btn--right {
+    right: 10px;
+  }
+  .slider__content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    text-align: center;
+    z-index: 999;
+  }
+  .slider__title{
+    font-size: 2.2em;
+    margin: 0;
+  }
+  .slider__txt{
+    margin: 5px 0;
+  }
+  .btn-shop{
+    display: block;
+    border: 2px solid var(--colorSecundario);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    width: 150px;
+    margin: 20px auto;
+    transition: all 0.5s;
+  }
+  .btn-shop:hover{
+    background: var(--colorPrincipal);
+    color: white;
+  }
+    /*Estilos para tablet*/
+@media screen and (min-width:768px) {
+    .slider{
+      height: 400px;
+    }
+  }
+  @media screen and (min-width:1280px) { 
+    .slider{
+      height: 500px;
+      font-size: 1.5em;
+    }
+  }
+  @media screen and (min-width:1600px) { 
+    .slider{
+      height: 600px;
+    }
+  }
+/* carrusel de tarjetas mobile*/
+main .contenedor-primer-carrusel{
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .contenedor-primer-carrusel .swiper-container{
+    width: 100%;
+    height: 100%;
+}
+main .contenedor-primer-carrusel .swiper-slide {
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    border-radius: 15px;
+    text-align: start;
+    box-shadow: 0px 4px 4px rgba(196, 196, 196, 0.25);
+}
+main .contenedor-primer-carrusel .swiper-slide img{
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+main .contenedor-primer-carrusel .swiper-slide .card-description{
+    padding:1rem 1rem;
+}
+main .contenedor-primer-carrusel .swiper-slide .card-title,.container .swiper-slide .card-text{
+    margin-bottom: .5rem;
+}
+main .contenedor-primer-carrusel .swiper-slide .card-link{
+    text-align: center;  
+}
+main .contenedor-primer-carrusel .swiper-slide .card-link a{
+    text-decoration: none;
+    color: #1d6ce2;
+}
+/* Estilos segundo carrusel */
+main .contenedor-desktop .carrusel-desktop{
+    display: none;
+}
+/* elimino en mobile y tablet el icono next */
+.iconos-flecha{
+    display: none;
+}
+.contenedor-segundo-carrusel h1{
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 1rem 0rem;
+}
+/* Seccion ofertas */
+.ofertas h2{
+    font-size: 1rem;
+    text-align: center;
+    margin: 1rem 0rem;
+}
+.ofertas article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ofertas article .boton{
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.18);
+    width: 235px;
+    text-align: center;
+    padding: 1rem 0rem;
+    position: relative;
+}
+.ofertas article img{
+    width: 235px;
+}
+.ofertas article .boton button{
+    background-color: var(--colorSecundario);
+    color: #fff;
+    border: none;
+    border-radius: 9px 8px 8px 9px;
+    padding: 0.2rem 0.2rem;
+    cursor: pointer;
+}
+/* cards solo vista desktop */
+.primer-tarjetas-desktop{
+    display: none;
+}
+.segunda-tarjeta-desktop{
+    display: none;
+}
+.contenedor-card h3{
+    display: none;
+}
+.contenedor-card .pointer{
+    cursor: pointer;
+}
+/* por que elegirnos */
+.container__testimonials{
+    text-align: center;
+    background: #F7F7F7;
+    padding: 20px;
+    margin: 20px 0;
+  }
+  .testimonial__txt{
+    color: #777;
+  }
+  .container-editor{
+    margin: 20px auto;
+    width: 80%;
+  }
+  
+  .editor__item{
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+  }
+  .editor__img  {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .editor__circle{
+    width: 200px;
+    height: 200px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -200px;
+    right: -150px;
+    color: white;
+    padding: 20px;
+    padding-bottom: 70px;
+    padding-right: 50px;
+    font-size: 1.1em;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.5s;
+  }
+  .editor__item:hover .editor__circle{
+    transform: scale(1.2);
+    bottom: -90px;
+    right: -50px;
+  }
+  .editor__item:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.2);
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  .editor__item:hover:before {
+    opacity: 1;
+  }
+
+/* responsive tablet */
+@media (min-width:768px){
+    /* responsive segundo carrusel */
+    .contenedor-segundo-carrusel h1{
+        font-size: 1.5rem;
+    }
+    /* carrusel mobile top destinos */
+    .contenedor-segundo-carrusel .carrusel-mobile {
+        display: none;
+    }
+    main .contenedor-desktop .contenedor-segundo-carrusel .carrusel-desktop{
+        display: flex;
+    }
+    main .contenedor-desktop .col-md-6 img{
+        border-radius: 1rem;
+    }
+    .iconos-flecha{
+        display: flex;
+        background-color: var(--colorPrincipal);
+        border-radius: 50%;
+    }
+    /* ofertas */
+    .ofertas h2{
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-align: center;
+        margin: 1rem 0rem;
+        color: #000;
+    }
+    .ofertas article img{
+        width: 60%;
+    }
+    .ofertas article .boton{
+        width: 60%;
+    }
+    .ofertas article .boton button{
+        padding: 0.5rem 0.5rem;
+    }
+    /* por que elegirnos */
+    .editor__item {
+        height: 250px;
+    }
+}
+/* responsive desktop */
+@media (min-width:1000px){
+    /* barra de busqueda */
+    main .contenedor .buscador{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    main .contenedor .buscador div{
+        background-color: #DDE7EA;
+        border-radius: 1rem;
+        margin-right: 0.5rem;
+    }
+    main .contenedor .buscador input{
+        background-color: #DDE7EA;
+        border: none;
+        border-radius: 1rem;
+        padding: 0.2rem 0rem;
+    }
+    main .contenedor .buscador i{
+        position: relative;
+        padding-right: 0.2rem;
+    }
+    main .contenedor .buscador button{
+        background-color: #DDE7EA;
+        border: none;
+        border-radius: 1rem;
+        padding: 0.4rem;
+    }
+    /* desaparece banner de mobile y teablet */
+    main .contenedor .banner .destinos{
+        display: none;
+    }
+    main .contenedor .banner .vuelos{
+        display: none;
+    }
+    main .contenedor .banner .formas{
+        display: none;
+    }
+    main .contenedor .banner .contenedor-boton{
+        display: none;
+    }
+    main .contenedor .banner label{
+        display: none;
+    }
+    /* primer carrusel */
+    main .contenedor-primer-carrusel{
+        display: none;
+    }
+    /* segundo carrusel */
+    main .contenedor-segundo-carrusel .carrusel-mobile{
+        display: none;
+    }
+    main .contenedor-segundo-carrusel .contenedor-iconos{
+        display: none;
+    }
+    /* carrusel y oferta desktop */
+    main .contenedor-desktop{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 80%;
+        margin: auto;
+    }
+    main .contenedor-desktop .contenedor-segundo-carrusel{
+        width: 50%;
+    }
+    main .contenedor-desktop .carrusel-desktop{
+        display: flex;
+    }
+    /* cards solo vista desktop */
+    .primer-tarjetas-desktop{
+        width: 90%;
+        margin: auto;
+        display: flex;
+    }
+    .primer-tarjetas-desktop .card-body{
+        background-color: var(--colorPrincipal);
+    }
+    .primer-tarjetas-desktop .card-body .estrellas{
+        color: #FFE500;
+    }
+    .contenedor-card h3{
+        display:inherit;
+        text-align: center;
+        font-weight: 600;
+        margin-top: 2rem;
+    }
+    /* segunda card */
+    .segunda-tarjeta-desktop{
+        width: 90%;
+        margin: auto;
+        display: flex;
+    }
+    .segunda-tarjeta-desktop .card-body{
+        background-color: var(--colorPrincipal);
+    }
+    .segunda-tarjeta-desktop .card-body .estrellas{
+        color: #FFE500;
+    }
+    /* ofertas */
+    main .ofertas{
+        width: 40%;
+    }
+    /* por que elegirnos */
+    .container__testimonials{
+        font-size: 1.3em; 
+    }
+    .container-editor{
+        display: flex;
+        justify-content: space-between;
+    }
+    .editor__item{
+        width: 48%;
+    }
+    .main-footer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+    }
+    .copy {
+        grid-column-start: span 4;
+        text-align: center;
+    }
+}

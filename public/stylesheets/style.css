@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600;700&display=swap');
+@import './general.css';
+@import './main.css';
+@import './header.css';
+@import './register.css';
+@import './footer.css';
+@import './login.css';
+@import './shoppingCart.css';
+@import './productDetail.css';
+@import './productForms.css'

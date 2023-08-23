@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- head -->
+<%- include('./partials/head',{
+    title : 'Home'
+}) %>
+
+<body>
+    <!-- header -->
+    <%- include('./partials/header') %>
+    <!-- cuerpo de pagina -->
+    <main>
+        <div class="contenedor">
+            <label class="buscador">
+                <form action="/search" method="get">
+                    <input type="text" name="keywords" placeholder="Buscar...">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </form>
+                <button type="submit">Buscar</button>
+            </label>
+            <!-- banner slider -->
+            <section class="container-slider">
+                <%-include('./partials/slider-banner') %>
+            </section>
+            <section class="banner">
+                <div class="destinos">
+                    <p>Ida y vuelta</p>
+                    <p>Solo ida</p>
+                    <p>Multidestino</p>
+                </div>
+                <article class="vuelos">
+                    <div class="argentina">
+                        <p class="bue">BUE</p>
+                        <p>Buenos Aires, Arg</p>
+                    </div>
+                    <div class="brasil">
+                        <p class="rio">RIO</p>
+                        <p>Rio de janeiro, Brasil</p>
+                    </div>
+                </article>
+                <article class="formas">
+                    <div class="calendario">
+                        <div class="ida">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <p>Ida</p>
+                        </div>
+                        <div class="vuelta">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <p>Vuelta</p>
+                        </div>
+                    </div>
+                    <div class="pasajeros">
+                        <p class="pasajero">1 Pasajero</p>
+                        <p>Económica</p>
+                    </div>
+                </article>
+                <label>
+                    <input type="checkbox" name="hobby" value="Pescar">Ver fechas más baratas
+                </label>
+                <div class="contenedor-boton">
+                    <button type="submit">Buscar</button>
+                    <i class="fas fa-horizontal-rule"></i>
+                </div>
+            </section>
+        </div>
+                <!-- Carrusel top destinos -->
+                <div class="contenedor-desktop">
+                    <section class="contenedor-segundo-carrusel">
+                        <h1>Top destinos más buscados hoy</h1>
+                        <!-- carrusel top destinos desktop -->
+                        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                            <%-include('./partials/slider-desk-top') %>
+                        </div>
+                        <!-- carrusel top destinos mobile y tablet -->
+                        <div id="carouselExampleCaptions" class="carousel slide carrusel-mobile">
+                            <%-include('./partials/slider-mobile-top') %>
+                        </div>
+                    </section>
+                    <!-- Seccion ofertas -->
+                    <section class="ofertas">
+                        <h2>Ofertas que no pueden esperar</h2>
+                        <article>
+                            <img src="/images/oferta.jpg" alt="Hombre descansando">
+                            <div class="boton">
+                                <button>Ver Ofertas</button>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+        <!-- Hoteles recomendados mobile slider -->
+        <section class="contenedor-primer-carrusel">
+            <div class="swiper-container mySwiper">
+                <h3>Hoteles Recomendados para ti </h3>
+                <div class="swiper-wrapper">
+                    <%-include('./partials/cards-slider-hotel-mobile') %>
+                </div>
+            </div>
+        </section>
+        <!-- lugares recomendados mobile slider -->
+        <section class="contenedor-primer-carrusel">
+            <div class="swiper-container mySwiper">
+                <h3>Lugares recomendados</h3>
+                <div class="swiper-wrapper">
+                    <%-include('./partials/cards-slider-lugar-mobile') %>
+                </div>
+            </div>
+        </section>
+
+            <!-- cards solo vista desktop LUGARES -->
+        <section class="contenedor-card"> 
+            <h3>Lugares Recomendados para ti </h3>
+            <div class="row row-cols-1 row-cols-xl-2-1 row-cols-xxl-5 row-cols-lg-2 g-4 segunda-tarjeta-desktop">
+                <% products.forEach(product => { %>
+                        <%-include('./partials/cards-lugar-index',{
+                            ...product
+                        }) %>
+                <% }) %>
+            </div>
+        </section>
+    <!-- cards solo vista desktop HOTELES  -->
+        <section class="contenedor-card">
+            <h3>Hoteles recomendados para ti</h3>
+            <div class="row row-cols-1 row-cols-xl-2-1 row-cols-xxl-5 row-cols-lg-2 g-4 segunda-tarjeta-desktop">
+                <% hotels.forEach(hotel => { %>
+                        <%-include('./partials/cards-hotel-index',{
+                            ...hotel
+                        }) %>
+                <% }) %>
+            </div>
+        </section>
+    <!-- Por que elegirnos -->
+        <section class="container__testimonials">
+            <h2 class="section__title">Por que elegirnos?</h2>
+            <h3 class="testimonial__title">Mas de 30 años en el rubro!</h3>
+            <p class="testimonial__txt">Somos Aventura sin Fin, una empresa dedicada a la venta de vuelos. ¡Tenemos descuentos semanales, no te los pierdas!</p>
+        </section>
+        <section class="container-editor">
+            <div class="editor__item">
+                <img src="/images/planea.jpg" alt="" class="editor__img" />
+                <p class="editor__circle">Paquetes</p>
+            </div>
+            <div class="editor__item">
+                <img src="/images/vuelos.jpg" alt="" class="editor__img" />
+                <p class="editor__circle">Vuelos</p>
+            </div>
+        </section>
+    </main>
+    <!-- footer -->
+    <%- include('./partials/footer') %>
+
+    <!-- scripts-->
+    <%- include('./partials/scripts') %>
+</body>
+</html>
