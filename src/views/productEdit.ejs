@@ -19,17 +19,20 @@
                         </div>
                         <div class="card-body">
                             <form action="/products/update/<%= id %>?_method=PUT" method="POST" class="row" enctype="multipart/form-data">
-                                    <div class="mb-3">
-                                    <label for="countryName" class="form-label">Pais</label>
-                                    <input type="text" class="form-control" id="countryName" name="country"
-                                        value="<%= product.country %>" required>
-                                </div>
 
-                                <div class="mb-3">
-                                    <label for="hotelName" class="form-label">Hotel</label>
-                                    <input type="text" class="form-control" id="hotelName" name="hotel"
-                                        value="<%= hotel %>" required>
-                                </div>
+                                
+<div class="mb-3">
+    <label for="countryName" class="form-label">País</label>
+    <input type="text" class="form-control" id="countryName" name="country"
+        value="<%= product.country %>" required>
+</div>
+
+<div class="mb-3">
+    <label for="hotelName" class="form-label">Hotel</label>
+    <input type="text" class="form-control" id="hotelName" name="hotel"
+        value="<%= product.hotel %>" required>
+</div>
+
 
                                 <div class="mb-3">
                                     <label for="flight" class="form-label">Vuelos</label>

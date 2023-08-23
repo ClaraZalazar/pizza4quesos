@@ -4,10 +4,11 @@ module.exports = (req, res) => {
     const products = readJSON("products.json");
     const hotels = readJSON("hotels.json");
     const id = req.params.id;
-    const product = products.find((product) => product.id === id);
+    const product = products.find((product) => product.id === parseInt(id));
 
     res.render("productEdit", {
         id: id,
+        product: product,
         country: product.country,
         hotel: product.hotel,
         flight: product.flight,
