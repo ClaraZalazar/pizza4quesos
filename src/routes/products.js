@@ -25,6 +25,7 @@ router
     .put('/update/:id', upload.fields('additionalImages'), update)
     .delete('/remove/:id', remove)
 
+
 module.exports = router;
 
 
