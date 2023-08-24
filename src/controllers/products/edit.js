@@ -5,6 +5,7 @@ module.exports = (req, res) => {
     const hotels = readJSON("hotels.json");
     const id = req.params.id;
     const product = products.find((product) => product.id === parseInt(id));
+    
 
     res.render("productEdit", {
         id: id,
@@ -21,3 +22,5 @@ module.exports = (req, res) => {
         ),
     });
 };
+
+

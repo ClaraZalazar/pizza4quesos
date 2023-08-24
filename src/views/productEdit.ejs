@@ -18,21 +18,36 @@
                             <h4 class="card-title">Editar producto</h4>
                         </div>
                         <div class="card-body">
+
                             <form action="/products/update/<%= id %>?_method=PUT" method="POST" class="row" enctype="multipart/form-data">
 
-                                
-<div class="mb-3">
-    <label for="countryName" class="form-label">País</label>
-    <input type="text" class="form-control" id="countryName" name="country"
-        value="<%= product.country %>" required>
-</div>
+                                <div class="mb-3">
+                                    <img src="/images/<%= image %>" alt="" class="img-fluid">
+                                </div>
 
-<div class="mb-3">
-    <label for="hotelName" class="form-label">Hotel</label>
-    <input type="text" class="form-control" id="hotelName" name="hotel"
-        value="<%= product.hotel %>" required>
-</div>
+                                <div class="mb-3">
+                                    <button class="btn btn-secondary" type="button" onclick="document.getElementById('productImage').click();">Editar imagen</button>
+                                    <input type="file" class="form-control" id="productImage" name="productImage" style="display: none;">
+                                </div>
 
+                                <div class="mb-3">
+                                    <button class="btn btn-secondary" type="button" id="addImageBtn">Agregar otra imagen</button>
+                                    <input type="file" class="form-control" id="additionalImages" name="additionalImages" multiple style="display: none;">
+                                    <!-- <input type="file" class="form-control" id="additionalImages" name="additionalImages" multiple> -->
+                                    <div id="additionalImagesContainer"></div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="countryName" class="form-label">País</label>
+                                    <input type="text" class="form-control" id="countryName" name="country"
+                                        value="<%= product.country %>" required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="hotelName" class="form-label">Hotel</label>
+                                    <input type="text" class="form-control" id="hotelName" name="hotel"
+                                        value="<%= product.hotel %>" required>
+                                </div>
 
                                 <div class="mb-3">
                                     <label for="flight" class="form-label">Vuelos</label>
@@ -61,9 +76,6 @@
                                 </div>
 
                                 <div class="d-flex justify-content-between mb-3">
-                                    <label for="productImage" class="btn btn-secondary">Editar imagen</label>
-
-                                    <input hidden class="form-control" type="file" id="productImage">
                                     <button class="btn btn-dark" type="submit">Guardar cambios</button>
                                 </div>
                             </form>
@@ -75,6 +87,26 @@
     </main>
 
     <%- include('partials/footer') %>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            const additionalImagesContainer = $("#additionalImagesContainer");
+            const addImageBtn = $("#addImageBtn");
+
+            let imageCounter = 0;
+
+            addImageBtn.click(function () {
+                const input = $("<input>")
+                    .attr("type", "file")
+                    .attr("name", `additionalImages[${imageCounter}]`)
+                    .addClass("form-control mb-2");
+
+                additionalImagesContainer.append(input);
+                imageCounter++;
+            });
+        });
+    </script>
 </body>
 
 </html>
