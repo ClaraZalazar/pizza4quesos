@@ -1,21 +1,23 @@
 <div class="col">
-    <div class="card">
-        <img src="/images/<%= image %>" class="card-img-top" alt="...">
-        <div class="card-body rounded-bottom d-flex flex-column justify-content-center align-items-center">
-            <h5 class="card-title text-white"><%= hotel %></h5>
-            <ul class="card-text text-white">
-                <li>Precio: <%= price %></li>
-                <li>Piezas: <%= parts %></li>
-                <li>Incluye: <%= description %></li>
-                <div class="estrellas">
-                    <i class="fa-sharp fa-solid fa-star"></i>
-                    <i class="fa-sharp fa-solid fa-star"></i>
-                    <i class="fa-sharp fa-solid fa-star"></i>
-                    <i class="fa-sharp fa-solid fa-star"></i>
-                    <i class="fa-sharp fa-solid fa-star"></i>
-                </div>
-                <a class="pointer btn btn-primary mt-2" href="/products/productDetail">Mas Detalles</a>
-            </ul>
-        </div>                        
-    </div>
+    <% if (category === "hotel") { %>
+        <div class="card">
+            <img src="/images/<%= image || 'card1.png' %>" class="card-img-top" alt="...">
+            <div class="card-body rounded-bottom d-flex flex-column justify-content-center align-items-center">
+                <h5 class="card-title text-white"><%=  hotel %></h5>
+                <ul class="card-text text-white">
+                    <li>Precio: <%= price %></li>
+                    <li>Piezas: <%= parts %></li>
+                    <li>Descripcion: <%= description %></li>
+                    <div class="estrellas">
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                    </div>
+                    <a class="pointer btn btn-primary mt-2" href="/products/detail/<%= id %>">Mas Detalles</a>
+                </ul>
+            </div>                        
+        </div>
+    <% } %>
 </div>

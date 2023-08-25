@@ -6,4 +6,3 @@ module.exports = {
   update : require('./products/update'),
   remove : require('./products/remove')
 };
-

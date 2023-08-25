@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+<%- include('./partials/head',{ title : 'Editar producto' }) %>
 
-<%- include('./partials/head', { title: 'Editar producto' }) %>
-
-<body style="min-height: 100vh; background-color: #f8f9fa; display: flex; flex-direction: column;">
-
-    <%- include('./partials/header') %>
+    <body style="
+      min-height: 100vh;
+      background-color: #f8f9fa;
+      display: flex;
+      flex-direction: column;
+    ">
+        <%- include('./partials/header') %>
 
     <main class="flex-grow-1 d-flex justify-content-center align-items-center"
         style="background-image: url('/images/jong-marshes-79mNMAvSORg-unsplash.jpg'); background-size: cover; background-position: center;">
@@ -86,27 +89,8 @@
         </div>
     </main>
 
-    <%- include('partials/footer') %>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            const additionalImagesContainer = $("#additionalImagesContainer");
-            const addImageBtn = $("#addImageBtn");
-
-            let imageCounter = 0;
-
-            addImageBtn.click(function () {
-                const input = $("<input>")
-                    .attr("type", "file")
-                    .attr("name", `additionalImages[${imageCounter}]`)
-                    .addClass("form-control mb-2");
-
-                additionalImagesContainer.append(input);
-                imageCounter++;
-            });
-        });
-    </script>
-</body>
+            <%- include('partials/footer') %>
+    </body>
 
 </html>

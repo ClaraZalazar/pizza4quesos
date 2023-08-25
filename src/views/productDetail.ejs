@@ -9,21 +9,28 @@
     <%- include('./partials/header') %>
     <!-- cuerpo de pagina -->
     <main class="product__container">
-        <img src="/images/<%= product.image %>" class="img-fluid" alt="">
-        
+        <div class="product__image">
+            <img src="/images/<%= image || 'card1.png' %>" alt="">
+        </div>
         <div class="product__details">
             <div class="product__title-rating">
-                <h1 class="product__title"><%= product.hotel %></h1> <!-- Cambio de hotel a product.hotel -->
+                <% if (category === "pais") { %>
+                    <h1 class="product__title"><%= country %></h1>
+                <% } else{%>
+                    <h1 class="product__title"><%= hotel %></h1>
+                <%} %>
                 <div class="product__rating">
                     ★★★★<span class="product__star-gray">★</span> 
                 </div>
             </div>
-            <p class="product__description"><%= product.description %></p> <!-- Cambio de description a product.description -->
-            <p class="product__additional-info">Habitaciones cuádruples / Varios tipos de camas.</p>
-            <p class="product__additional-info product__price"><strong>U$S<%= product.price %></strong></p> <!-- Cambio de price a product.price -->
+            <p class="product__description"><%= description %></p>
+            <% if (category === "hotel") { %>
+                <p class="product__additional-info"><%= promotion %></p>
+            <% } %>
+            <p class="product__additional-info product__price"><strong>U$S<%= price %></strong></p> 
             <button class="product__button">RESERVAR</button>
         </div>
-    </main> 
+    </main>
     <!-- footer -->
     <%- include('partials/footer') %>
 </body>

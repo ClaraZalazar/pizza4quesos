@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head',{
+        title : 'Resultados'
+    }) %>
+</head>
+<body>
+        <!-- header -->
+        <%- include('./partials/header') %>
+
+        <section class="contenedor-card"> 
+            <% if (results.length) { %>
+                <h3>Lugares Recomendados para ti en <%= keywords %> </h3>
+                <div class="row row-cols-1 row-cols-xl-2-1 row-cols-xxl-5 row-cols-lg-2 g-4 segunda-tarjeta-desktop">
+                    <% results.forEach(product => { %>
+                            <%-include('./partials/cards-lugar-index',{
+                                ...product
+                            }) %>
+                    <% }) %>
+                    <% } else {%>
+                        <div class="col-12 text-center mt-4 mb-4">
+                            <h2 class="products-title" style="color: var(--colorPrincipal);">Lo sentimos, no hay lugares que coincidan con <%= keywords %></h2>
+                            <img src="/images/no-hay-viajes.png" alt="">
+                        </div>
+                        <%}%>
+                </div>
+        </section>
+        <section class="contenedor-card"> 
+            <% if (results.length) { %>
+                <h3>Hoteles Recomendados para ti en <%= keywords %> </h3>
+                <div class="row row-cols-1 row-cols-xl-2-1 row-cols-xxl-5 row-cols-lg-2 g-4 segunda-tarjeta-desktop">
+                    <% results.forEach(product => { %>
+                            <%-include('./partials/cards-hotel-index',{
+                                ...product
+                            }) %>
+                    <% }) %>
+                    <% } %>
+                </div>
+        </section>
+
+        <!-- footer -->
+        <%- include('./partials/footer') %>
+            <!-- scripts-->
+    <%- include('./partials/scripts') %>
+</body>
+</html>

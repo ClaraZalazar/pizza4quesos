@@ -16,13 +16,15 @@ body {
 
 .product__image {
     padding: 20px;
-    height: 23rem;
-    background-image: url('/images/riberaSurHotel.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
     border-radius: 10px 0px 0px 10px;
+}
+.product__image img {
+    height: 23rem;
+    width: 100%;
+    object-fit: cover;
+    background-position: center;
 }
 
 .product__details {

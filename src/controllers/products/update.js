@@ -1,4 +1,3 @@
-
 const { unlinkSync, existsSync } = require("fs");
 const { readJSON, writeJSON } = require("../../data");
 
@@ -54,4 +53,3 @@ module.exports = async (req, res) => {
     return res.status(500).send("Internal server error");
   }
 };
-

@@ -1,85 +1,17 @@
-<div class="swiper-slide">
-    <img src="/images/card6.png"
-        alt="">
-    <div class="card-description">
-        <div class="card-title">
-            <h4>Descripción</h4>
-        </div>
-        <div class="card-text">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim possimus dolorum non,
-                modi
-                sunt ips.</p>
-        </div>
-        <div class="card-link">
-            <a href="/products/productDetail">Ver más</a>
-        </div>
-    </div>
-</div>
-<div class="swiper-slide">
-    <img src="/images/card7.png"
-        alt="">
-    <div class="card-description">
-        <div class="card-title">
-            <h4>Descripción</h4>
-        </div>
-        <div class="card-text">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim possimus dolorum non,
-                modi
-                sunt ips.</p>
-        </div>
-        <div class="card-link">
-            <a href="/products/productDetail">Ver más</a>
+<% if (category === "pais") { %>
+    <div class="swiper-slide">
+        <img src="/images/<%= image || 'card1.png' %>"
+            alt="">
+        <div class="card-description">
+            <div class="card-title">
+                <h4>Descripción</h4>
+            </div>
+            <div class="card-text">
+                <p><%= description %></p>
+            </div>
+            <div class="card-link">
+                <a href="/products/detail/<%= id %>">Ver más</a>
+            </div>
         </div>
     </div>
-</div>
-<div class="swiper-slide">
-    <img src="/images/card8.png"
-    alt="">
-    <div class="card-description">
-        <div class="card-title">
-            <h4>Descripción</h4>
-        </div>
-        <div class="card-text">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim possimus dolorum non,
-            modi
-            sunt ips.</p>
-        </div>
-        <div class="card-link">
-            <a href="/products/productDetail">Ver más</a>
-        </div>
-    </div>
-</div>
-<div class="swiper-slide">
-    <img src="/images/card9.png"
-    alt="">
-    <div class="card-description">
-        <div class="card-title">
-            <h4>Descripción</h4>
-        </div>
-        <div class="card-text">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim possimus dolorum non,
-            modi
-            sunt ips.</p>
-        </div>
-        <div class="card-link">
-            <a href="/products/productDetail">Ver más</a>
-        </div>
-    </div>
-</div>
-<div class="swiper-slide">
-    <img src="/images/card10.png"
-    alt="">
-    <div class="card-description">
-        <div class="card-title">
-            <h4>Descripción</h4>
-        </div>
-        <div class="card-text">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim possimus dolorum non,
-            modi
-            sunt ips.</p>
-        </div>
-        <div class="card-link">
-            <a href="/products/productDetail">Ver más</a>
-        </div>
-    </div>
-</div>
+<% } %>

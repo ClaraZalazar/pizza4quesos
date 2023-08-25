@@ -92,7 +92,11 @@
             <div class="swiper-container mySwiper">
                 <h3>Hoteles Recomendados para ti </h3>
                 <div class="swiper-wrapper">
-                    <%-include('./partials/cards-slider-hotel-mobile') %>
+                    <% products.forEach(product => { %>
+                        <%-include('./partials/cards-slider-hotel-mobile',{
+                            ...product
+                        }) %>
+                    <% }) %>
                 </div>
             </div>
         </section>
@@ -101,7 +105,11 @@
             <div class="swiper-container mySwiper">
                 <h3>Lugares recomendados</h3>
                 <div class="swiper-wrapper">
-                    <%-include('./partials/cards-slider-lugar-mobile') %>
+                    <% products.forEach(product => { %>
+                        <%-include('./partials/cards-slider-lugar-mobile',{
+                            ...product
+                        }) %>
+                    <% }) %>
                 </div>
             </div>
         </section>
@@ -121,9 +129,9 @@
         <section class="contenedor-card">
             <h3>Hoteles recomendados para ti</h3>
             <div class="row row-cols-1 row-cols-xl-2-1 row-cols-xxl-5 row-cols-lg-2 g-4 segunda-tarjeta-desktop">
-                <% hotels.forEach(hotel => { %>
+                <% products.forEach(product => { %>
                         <%-include('./partials/cards-hotel-index',{
-                            ...hotel
+                            ...product
                         }) %>
                 <% }) %>
             </div>

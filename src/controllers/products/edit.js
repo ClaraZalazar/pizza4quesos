@@ -2,7 +2,6 @@ const { readJSON } = require("../../data");
 
 module.exports = (req, res) => {
     const products = readJSON("products.json");
-    const hotels = readJSON("hotels.json");
     const id = req.params.id;
     const product = products.find((product) => product.id === parseInt(id));
     
@@ -17,10 +16,8 @@ module.exports = (req, res) => {
         price: product.price,
         discount: product.discount,
         image: product.image,
-        hotels: hotels.sort((a, b) =>
+        product: products.sort((a, b) =>
             a.hotel > b.hotel ? 1 : a.hotel < b.hotel ? -1 : 0
         ),
     });
 };
-
-

@@ -1,129 +1,264 @@
 [
    {
       "id": 1,
-      "country": "paris",
-      "hotel": "lorem",
-      "flight": "sin-escala",
-      "description": "Lorem ipsum dolor amet sit",
-      "price": 300.16,
-      "discount": 15,
-      "image": "card1.png"
+      "country": "Francia",
+      "category": "pais",
+      "hotel": "Transilvania",
+      "price": 50900,
+      "description": "Viaja a parís un lugar divino para pasar tus vacaciones!",
+      "image": "1692984712562_products_.jpg",
+      "flight": "con-escala",
+      "discount": 10,
+      "updatedAt": "2023-08-25T17:31:52.569Z"
    },
    {
       "id": 2,
       "country": "Estados Unidos",
-      "hotel": "lorem",
-      "flight": [
-         "sin escala",
-         "con escala"
-      ],
-      "description": "Lorem ipsum dolor amet sit",
-      "price": 500,
-      "discount": 10,
-      "image": "card1.png"
+      "category": "pais",
+      "hotel": "Nueva Chicago",
+      "flight": "con-escala",
+      "description": "Viaja a ee.uu un lugar divino para pasar tus vacaciones!",
+      "price": 30000,
+      "discount": 13,
+      "image": "1692985046172_products_.jpg",
+      "updatedAt": "2023-08-25T17:37:26.202Z"
    },
    {
       "id": 3,
       "country": "Italia",
-      "hotel": "lorem",
-      "flight": [
-         "sin escala",
-         "con escala"
-      ],
-      "description": "Lorem ipsum dolor amet sit",
-      "price": 350,
-      "discount": 20,
-      "image": "card1.png"
+      "category": "pais",
+      "hotel": "Coliseo Hotel",
+      "flight": "sin-escala",
+      "description": "Viaja a italia un lugar divino para pasar tus vacaciones!",
+      "price": 70000,
+      "discount": 0,
+      "image": "1692985177350_products_.webp",
+      "updatedAt": "2023-08-25T17:39:37.356Z"
    },
    {
       "id": 4,
-      "country": "Japón",
-      "hotel": "lorem",
-      "flight": [
-         "sin escala",
-         "con escala"
-      ],
-      "description": "Lorem ipsum dolor amet sit",
-      "price": 200,
-      "discount": 10,
-      "image": "card1.png"
+      "country": "Japon",
+      "category": "pais",
+      "hotel": "Tokyo Hotel",
+      "flight": "sin-escala",
+      "description": "Viaja a Japon un lugar divino para pasar tus vacaciones!",
+      "price": 90000,
+      "discount": 5,
+      "image": "1692985402630_products_.jpg",
+      "updatedAt": "2023-08-25T17:43:22.641Z"
    },
    {
       "id": 5,
       "country": "Argentina",
-      "hotel": "lorem",
-      "flight": [
-         "sin escala",
-         "con escala"
-      ],
-      "description": "Lorem ipsum dolor amet sit",
-      "price": 150,
-      "discount": 10,
-      "image": "card1.png"
+      "category": "pais",
+      "hotel": "Argentino Hotel",
+      "flight": "sin-escala",
+      "description": "Viaja a Argentina un lugar divino para pasar tus vacaciones!",
+      "price": 50900,
+      "discount": 23,
+      "image": "1692985511439_products_.jpg",
+      "updatedAt": "2023-08-25T17:45:11.447Z"
    },
    {
       "id": 6,
-      "country": "Grecia",
-      "hotel": "lorem",
-      "flight": [
-         "sin escala",
-         "con escala"
-      ],
-      "description": "Lorem ipsum dolor amet sit",
-      "price": 400,
-      "discount": 15,
-      "image": "card1.png"
+      "country": "Inglaterra",
+      "category": "pais",
+      "hotel": "City Hotel",
+      "flight": "sin-escala",
+      "description": "Viaja a Inglaterra un lugar divino para pasar tus vacaciones!",
+      "price": 80900,
+      "discount": 50,
+      "image": "1692985699082_products_.jpg",
+      "updatedAt": "2023-08-25T17:48:19.093Z"
    },
    {
       "id": 7,
-      "country": "Australia",
-      "hotel": "lorem",
-      "flight": [
-         "sin escala",
-         "con escala"
-      ],
-      "description": "Lorem ipsum dolor amet sit",
-      "price": 450,
+      "country": "Rusia",
+      "category": "pais",
+      "hotel": "Moscow Hotel",
+      "flight": "sin-escala",
+      "description": "Viaja a Rusia un lugar divino para pasar tus vacaciones!",
+      "price": 90000,
       "discount": 10,
-      "image": "card1.png"
+      "image": "1692985816971_products_.jpg",
+      "updatedAt": "2023-08-25T17:50:16.980Z"
    },
    {
       "id": 8,
-      "country": "Costa Rica",
-      "hotel": "lorem",
-      "flight": [
-         "sin escala",
-         "con escala"
-      ],
-      "description": "Lorem ipsum dolor amet sit",
-      "price": 250,
-      "discount": 10,
-      "image": "card1.png"
+      "country": "India",
+      "category": "pais",
+      "hotel": "Taj Mahal Hotel",
+      "flight": "sin-escala",
+      "description": "Viaja a india un lugar divino para pasar tus vacaciones!",
+      "price": 100000,
+      "discount": 23,
+      "image": "1692986640243_products_.jpg",
+      "updatedAt": "2023-08-25T18:04:00.251Z"
    },
    {
       "id": 9,
-      "country": "Panamá",
-      "hotel": "lorem",
-      "flight": [
-         "sin escala",
-         "con escala"
-      ],
-      "description": "Lorem ipsum dolor amet sit",
-      "price": 280,
-      "discount": 15,
-      "image": "card1.png"
+      "country": "Egipto",
+      "category": "pais",
+      "hotel": "Cairo Hotel",
+      "flight": "sin-escala",
+      "description": "Viaja a Egipto un lugar divino para pasar tus vacaciones!",
+      "price": 10000,
+      "discount": 10,
+      "image": "1692986998969_products_.jpeg",
+      "updatedAt": "2023-08-25T18:09:58.977Z"
    },
    {
       "id": 10,
-      "country": "Panamá",
-      "hotel": "lorem",
-      "flight": [
-         "sin escala",
-         "con escala"
-      ],
-      "description": "Lorem ipsum dolor amet sit",
-      "price": 280,
-      "discount": 15,
-      "image": "card1.png"
+      "country": "Australia",
+      "category": "pais",
+      "hotel": "Sidney Hotel",
+      "parts": "Lorem",
+      "flight": "sin-escala",
+      "description": "Viaja a Australia un lugar divino para pasar tus vacaciones!",
+      "promotion": "Habitaciones cuadruples / varios tipos de camas",
+      "price": 110000,
+      "discount": 20,
+      "image": "1692987216230_products_.jpg",
+      "updatedAt": "2023-08-25T18:13:36.239Z"
+   },
+   {
+      "id": 11,
+      "country": "Francia",
+      "category": "hotel",
+      "hotel": "Transilvania",
+      "parts": "4 habitaciones",
+      "flight": "sin-escala",
+      "description": "Excelente hotel para pasar las vaciones en Francia!",
+      "promotion": "Habitaciones cuadruples / varios tipos de camas",
+      "price": 50900,
+      "discount": 10,
+      "image": "1692989698963_products_.jpg",
+      "updatedAt": "2023-08-25T18:54:58.970Z"
+   },
+   {
+      "id": 12,
+      "country": "Estados Unidos",
+      "category": "hotel",
+      "hotel": "Nueva Chicago",
+      "parts": "4 habitaciones",
+      "flight": "sin-escala",
+      "description": "Excelente hotel para pasar las vaciones en EE.UU!",
+      "promotion": "Habitaciones cuadruples / varios tipos de camas",
+      "price": 30000,
+      "discount": 13,
+      "image": "1692990116500_products_.jpg",
+      "updatedAt": "2023-08-25T19:01:56.507Z"
+   },
+   {
+      "id": 13,
+      "country": "Italia",
+      "category": "hotel",
+      "hotel": "Coliseo Hotel",
+      "parts": "4 habitaciones",
+      "flight": "sin-escala",
+      "description": "Excelente hotel para pasar las vaciones en Italia!",
+      "promotion": "Habitaciones cuadruples / varios tipos de camas",
+      "price": 70000,
+      "discount": 0,
+      "image": "1692990313472_products_.jpg",
+      "updatedAt": "2023-08-25T19:05:13.478Z"
+   },
+   {
+      "id": 14,
+      "country": "Japon",
+      "category": "hotel",
+      "hotel": "Tokyo Hotel",
+      "parts": "4 habitaciones",
+      "flight": "sin-escala",
+      "description": "Excelente hotel para pasar las vaciones en Japon!",
+      "promotion": "Habitaciones cuadruples / varios tipos de camas",
+      "price": 90000,
+      "discount": 5,
+      "image": "1692990477810_products_.jpg",
+      "updatedAt": "2023-08-25T19:07:57.850Z"
+   },
+   {
+      "id": 15,
+      "country": "Argentina",
+      "category": "hotel",
+      "hotel": "Argentino Hotel",
+      "parts": "4 habitaciones",
+      "flight": "sin-escala",
+      "description": "Excelente hotel para pasar las vaciones en Argentina!",
+      "promotion": "Habitaciones cuadruples / varios tipos de camas",
+      "price": 50900,
+      "discount": 23,
+      "image": "1692990423538_products_.jpg",
+      "updatedAt": "2023-08-25T19:07:03.545Z"
+   },
+   {
+      "id": 16,
+      "country": "Inglaterra",
+      "category": "hotel",
+      "hotel": "City Hotel",
+      "parts": "4 habitaciones",
+      "flight": "sin-escala",
+      "description": "Excelente hotel para pasar las vaciones en Inglaterra!",
+      "promotion": "Habitaciones cuadruples / varios tipos de camas",
+      "price": 80900,
+      "discount": 50,
+      "image": "1692990548028_products_.jpg",
+      "updatedAt": "2023-08-25T19:09:08.034Z"
+   },
+   {
+      "id": 17,
+      "country": "Rusia",
+      "category": "hotel",
+      "hotel": "Moscow Hotel",
+      "parts": "4 habitaciones",
+      "flight": "sin-escala",
+      "description": "Excelente hotel para pasar las vaciones en Rusia!",
+      "promotion": "Habitaciones cuadruples / varios tipos de camas",
+      "price": 90000,
+      "discount": 10,
+      "image": "1692990585141_products_.jpg",
+      "updatedAt": "2023-08-25T19:09:45.151Z"
+   },
+   {
+      "id": 18,
+      "country": "India",
+      "category": "hotel",
+      "hotel": "Taj Mahal Hotel",
+      "parts": "4 habitaciones",
+      "flight": "sin-escala",
+      "description": "Excelente hotel para pasar las vaciones en India!",
+      "promotion": "Habitaciones cuadruples / varios tipos de camas",
+      "price": 100000,
+      "discount": 23,
+      "image": "1692990623522_products_.jpg",
+      "updatedAt": "2023-08-25T19:10:23.528Z"
+   },
+   {
+      "id": 19,
+      "country": "Egipto",
+      "category": "hotel",
+      "hotel": "Cairo Hotel",
+      "parts": "4 habitaciones",
+      "flight": "sin-escala",
+      "description": "Excelente hotel para pasar las vaciones en Egipto!",
+      "promotion": "Habitaciones cuadruples / varios tipos de camas",
+      "price": 10000,
+      "discount": 10,
+      "image": "1692990656722_products_.jpg",
+      "updatedAt": "2023-08-25T19:10:56.730Z"
+   },
+   {
+      "id": 20,
+      "country": "Australia",
+      "category": "hotel",
+      "hotel": "Sidney Hotel",
+      "parts": "4 habitaciones",
+      "flight": "sin-escala",
+      "description": "Excelente hotel para pasar las vaciones en Australia!",
+      "promotion": "Habitaciones cuadruples / varios tipos de camas",
+      "price": 110000,
+      "discount": 20,
+      "image": "1692990690223_products_.jpg",
+      "updatedAt": "2023-08-25T19:11:30.229Z"
    }
 ]

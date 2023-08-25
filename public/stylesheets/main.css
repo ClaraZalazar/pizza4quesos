@@ -475,7 +475,7 @@ main .contenedor-desktop .carrusel-desktop{
         padding-top: 1rem;
         margin-bottom: 1rem;
     }
-    main .contenedor .buscador div{
+    main .contenedor .buscador form{
         background-color: #DDE7EA;
         border-radius: 1rem;
         margin-right: 0.5rem;
