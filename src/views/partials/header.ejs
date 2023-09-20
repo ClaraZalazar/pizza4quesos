@@ -7,16 +7,26 @@
         <input type="checkbox" id="menu" class="nav__input"> 
         <div class="nav__menu">
             <ul>
-                <li><a href="">Vuelos</a><i class="fas fa-plane" ></i></li>
+                <li><a href="/vuelos">Vuelos</a><i class="fas fa-plane" ></i></li>
                 <li><a href="">Hoteles</a><i class="fas fa-hotel" id="hotel"></i></li>
                 <li><a href="">Paquetes</a><i class="fas fa-briefcase" id="paquetes"></i></li>
             </ul>
             <hr>
             <ul>
-                <li><a href="/users/shoppingCart">Carrito</a><i class="fas fa-cart-arrow-down"></i></li>
-                <li><a href="/users/login">Ingresar</a><i class="fas fa-sign-in-alt"></i></li>
-                <li><a href="/users/#">Perfil</a><i class="fa-solid fa-user"></i></i></li>
-                <li><a href="/dashboard">Admin</a><i class="fa-solid fa-gears"></i></li>
+                <!-- si no existe el locals.userlogin me muesta en la vista para que se logee  -->
+                <% if (!locals.userLogin) { %>
+                    <li><a href="/users/shoppingCart">Carrito</a><i class="fas fa-cart-arrow-down"></i></li>
+                    <li><a href="/users/login">Ingresar</a><i class="fas fa-sign-in-alt"></i></li>
+                    <li><a href="/users/profile">Perfil</a><i class="fa-solid fa-user"></i></i></li>
+                <% } else { %>
+                    <!-- si existe me muestra estas opciones la de profile y salir -->
+                    <% if (userLogin.rol === "admin") { %>
+                        <!-- si el rol es de admin me va mostrar en la vista el admin -->
+                        <li><a href="/dashboard">Admin</a><i class="fa-solid fa-gears"></i></li>
+                    <% } %>
+                    <li><a href="/users/profile">Hola <%= userLogin.name %>!</a><i class="fa-solid fa-user"></i></li>
+                    <li><a href="/users/logout">Salir</a></li>
+                <% } %>
             </ul>
         </div>
     </div>

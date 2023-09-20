@@ -1,12 +1,12 @@
-
 module.exports = {
-  register: (req, res) => {
-    return res.render('register');
-  },
-  login: (req, res) => {
-    return res.render('login');
-  },
-  shoppingCart: (req, res) => {
-    return res.render('shoppingCart');
-  }
+    register : require('./users/register'),
+    processRegister : require('./users/processRegister'),
+    login : require('./users/login'),
+    processLogin : require('./users/processLogin'),
+    profile : require('./users/profile'),
+    updateProfile : require('./users/updateProfile'),
+    shoppingCart: (req, res) => {
+      return res.render('shoppingCart');
+    },
+    logout : require('./users/logout')
 };

@@ -1,93 +1,67 @@
 [
-    {
-       "id": "1",
-       "firstName": "María",
-       "lastName": "González",
-       "email": "maria@example.com",
-       "password": "amoMiHijo",
-       "category": "standard",
-       "image": "PERFIL-VACIO.png"
-    },
-    {
-       "id": "2",
-       "firstName": "Juan",
-       "lastName": "Martínez",
-       "email": "juan@example.com",
-       "password": "amoProgramar",
-       "category": "premium",
-       "image": "PERFIL-VACIO.png"
-    },
-    {
-       "id": "3",
-       "firstName": "Mónica",
-       "lastName": "López",
-       "email": "monica@example.com",
-       "password": "amoMiEsposo",
-       "category": "standard",
-       "image": "PERFIL-VACIO.png"
-    },
-    {
-       "id": "4",
-       "firstName": "Francisco",
-       "lastName": "Rodríguez",
-       "email": "francisco@example.com",
-       "password": "amoMiFamilia",
-       "category": "standard",
-       "image": "PERFIL-VACIO.png"
-    },
-    {
-       "id": "5",
-       "firstName": "Carmen",
-       "lastName": "Fernández",
-       "email": "carmen@example.com",
-       "password": "amoComer",
-       "category": "premium",
-       "image": "PERFIL-VACIO.png"
-    },
-    {
-       "id": "6",
-       "firstName": "Leo",
-       "lastName": "Díaz",
-       "email": "leo@example.com",
-       "password": "meEncantaElFernet",
-       "category": "standard",
-       "image": "PERFIL-VACIO.png"
-    },
-    {
-       "id": "7",
-       "firstName": "Rodrigo",
-       "lastName": "Gómez",
-       "email": "rodrigo@example.com",
-       "password": "meEncantaElAzul",
-       "category": "standard",
-       "image": "PERFIL-VACIO.png"
-    },
-    {
-       "id": "8",
-       "firstName": "Carolina",
-       "lastName": "Pérez",
-       "email": "carolina@example.com",
-       "password": "amoLaMilanesa",
-       "category": "premium",
-       "image": "PERFIL-VACIO.png"
-    },
-    {
-       "id": "9",
-       "firstName": "Sandra",
-       "lastName": "Alvarez",
-       "email": "sandra@example.com",
-       "password": "amoViajar",
-       "category": "standard",
-       "image": "PERFIL-VACIO.png"
-    },
-    {
-       "id": "10",
-       "firstName": "Mateo",
-       "lastName": "Ramos",
-       "email": "mateo@example.com",
-       "password": "amoMiPerro",
-       "category": "standard",
-       "image": "PERFIL-VACIO.png"
-    }
- ]
- 
+   {
+      "id": "eaaf662d-29ee-461f-8bae-365eb476b7a6",
+      "name": "Rodrigo",
+      "surname": "Riveros",
+      "email": "rodrigoezequiel.riveros@gmail.com",
+      "password": "$2a$10$qxNOnmVMLEMrO0UXthN5IuCnEChcsaUvnF.A8/W1haYNhvgnX0Xpm",
+      "rol": "admin",
+      "birthday": null
+   },
+   {
+      "id": "5c9f8307-0d77-4f6e-a092-8361dcf1bec8",
+      "profilePicture": null
+   },
+   {
+      "id": "9fa8d860-329d-4e16-b0bb-93783d583174",
+      "name": "Liam",
+      "surname": "Nuske",
+      "email": "liamnuske@gmail.com",
+      "password": "$2a$10$.o7oNKHrKXsBUynpqLKC8.rISljFXVrZN/OFPr1fkOiV8q2EhSnem",
+      "rol": "user",
+      "telefono": null,
+      "genero": null,
+      "asiento": null,
+      "suscripcion": null,
+      "fotoPerfil": null,
+      "birthday": null
+   },
+   {
+      "id": "816c2f17-f6b3-4fec-be9c-69694ef21a94",
+      "name": "Leo",
+      "surname": "Nuske",
+      "email": "leonuske2@gmail.com",
+      "password": "$2a$10$cQvedGDSQfnnlZSaGkYNwOfSoMCJkoVz7KVI4yKJIWk3YdbpzGYqS",
+      "rol": "admin",
+      "telefono": null,
+      "genero": null,
+      "asiento": null,
+      "suscripcion": null,
+      "fotoPerfil": null,
+      "birthday": null
+   },
+   {
+      "id": "911f75f9-b226-4496-b628-f58df998c535",
+      "profilePicture": null
+   },
+   {
+      "id": "a4766a85-ceec-4c71-8adb-de6a36d68736",
+      "profilePicture": null
+   },
+   {
+      "id": "6ac0ba88-fb71-4c22-9cef-d4bf60427d19",
+      "profilePicture": null
+   },
+   {
+      "id": "16ee9e6b-190b-44ad-957a-49d0c7bf536f",
+      "profilePicture": null
+   },
+   {
+      "id": "de29928f-4898-4e46-8f6e-8bb63e359da2",
+      "profilePicture": null
+   },
+   {
+      "id": "2799db10-8c12-4552-b3d3-5c7abc31faef",
+      "profilePicture": null
+   }
+]

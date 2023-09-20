@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- head -->
+<%- include('./partials/head',{ title : 'Home' }) %>
+
+    <body>
+        <!-- header -->
+        <%- include('./partials/header') %>
+            <!-- cuerpo de pagina -->
+    <main>
+        <h1>Descubre nuevas sensaciones</h1>
+        <div id="app">
+            <!-- Travel slider -->
+            <div class="travel-slider">
+                <!-- Rotating Planet -->
+                <div class="travel-slider-planet">
+                    <img src="https://travel-slider.uiinitiative.com/images/earth.svg" />
+                    <div class="travel-slider-cities">
+                        <img src="https://travel-slider.uiinitiative.com/images/usa.svg" />
+                        <img src="https://travel-slider.uiinitiative.com/images/england.svg" />
+                        <img src="https://travel-slider.uiinitiative.com/images/france.svg" />
+                        <img src="https://travel-slider.uiinitiative.com/images/italy.svg" />
+                        <img src="https://travel-slider.uiinitiative.com/images/russia.svg" />
+                        <img src="https://travel-slider.uiinitiative.com/images/egypt.svg" />
+                        <img src="https://travel-slider.uiinitiative.com/images/india.svg" />
+                        <img src="https://travel-slider.uiinitiative.com/images/japan.svg" />
+                    </div>
+                </div>
+                <!-- Swiper -->
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="https://travel-slider.uiinitiative.com/images/usa.jpg"
+                                class="travel-slider-bg-image" />
+                            <div class="travel-slider-content">
+                                <div class="travel-slider-title">Estados Unidos</div>
+                                <div class="travel-slider-subtitle">8,295 Habitantes</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://travel-slider.uiinitiative.com/images/england.jpg"
+                                class="travel-slider-bg-image" />
+                            <div class="travel-slider-content">
+                                <div class="travel-slider-title">Inglaterra</div>
+                                <div class="travel-slider-subtitle">1,110 Habitantes</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://travel-slider.uiinitiative.com/images/france.jpg"
+                                class="travel-slider-bg-image" />
+                            <div class="travel-slider-content">
+                                <div class="travel-slider-title">Francia</div>
+                                <div class="travel-slider-subtitle">314 Habitantes</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://travel-slider.uiinitiative.com/images/italy.jpg"
+                                class="travel-slider-bg-image" />
+                            <div class="travel-slider-content">
+                                <div class="travel-slider-title">Italia</div>
+                                <div class="travel-slider-subtitle">1,200 Habitantes</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://travel-slider.uiinitiative.com/images/russia.jpg"
+                                class="travel-slider-bg-image" />
+                            <div class="travel-slider-content">
+                                <div class="travel-slider-title">Rusia</div>
+                                <div class="travel-slider-subtitle">12,231 Habitantes</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://travel-slider.uiinitiative.com/images/egypt.jpg"
+                                class="travel-slider-bg-image" />
+                            <div class="travel-slider-content">
+                                <div class="travel-slider-title">Egipto</div>
+                                <div class="travel-slider-subtitle">505 Habitantes</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://travel-slider.uiinitiative.com/images/india.jpg"
+                                class="travel-slider-bg-image" />
+                            <div class="travel-slider-content">
+                                <div class="travel-slider-title">India</div>
+                                <div class="travel-slider-subtitle">2,300 Habitantes</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://travel-slider.uiinitiative.com/images/japan.jpg"
+                                class="travel-slider-bg-image" />
+                            <div class="travel-slider-content">
+                                <div class="travel-slider-title">Japon</div>
+                                <div class="travel-slider-subtitle">2,300 Habitantes</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- footer -->
+    <%- include('./partials/footer') %>
+    <!-- scripts-->
+    <%- include('./partials/scripts') %>
+    </body>
+
+</html>

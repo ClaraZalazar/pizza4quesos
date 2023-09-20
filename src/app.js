@@ -3,10 +3,16 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const methodOverride = require('method-override');
+const session = require('express-session');
+// requiero middleware de locals
+const localsCheck = require('./middlewares/localsCheck');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var productsRouter = require('./routes/products');
+const cookieCheck = require('./middlewares/cookieCheck');
+const updateProfile = require('./controllers/users/updateProfile');
 
 var app = express();
 
@@ -20,9 +26,22 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname,'..', 'public')));
 
+app.use(methodOverride('_method'));
+app.use(session({
+  secret : "aventuraSF",
+  resave : true,
+  saveUninitialized : true
+}));
+// referencia a los check
+app.use(cookieCheck);
+app.use(localsCheck);
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/products', productsRouter);
+app.put('/users/profile', updateProfile);
+app.post('/users/profile', updateProfile);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

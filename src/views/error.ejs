@@ -1,3 +1,17 @@
+<%- include('./partials/head',{
+    title : '404 Not Found'
+}) %>
+<!-- header -->
+<%- include('./partials/header') %>
+
 <h1><%= message %></h1>
 <h2><%= error.status %></h2>
 <pre><%= error.stack %></pre>
+
+<h1 class="titulo-404">PROXIMAMENTE ERROR 404</h1>
+<img src="/images/22827.jpg" width="100%" alt="">
+
+<!-- footer -->
+<%- include('./partials/footer') %>
+<!-- scripts-->
+<%- include('./partials/scripts') %>

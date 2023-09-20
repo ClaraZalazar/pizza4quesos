@@ -22,10 +22,10 @@
                         </div>
                         <div class="card-body">
 
-                            <form action="/products/update/<%= id %>?_method=PUT" method="POST" class="row" enctype="multipart/form-data">
+                            <form action="/products/update/<%= product.id %>?_method=PUT" method="POST" class="row" enctype="multipart/form-data">
 
                                 <div class="mb-3">
-                                    <img src="/images/<%= image %>" alt="" class="img-fluid">
+                                    <img src="/images/<%= product.image %>" alt="" class="img-fluid">
                                 </div>
 
                                 <div class="mb-3">
@@ -55,8 +55,8 @@
                                 <div class="mb-3">
                                     <label for="flight" class="form-label">Vuelos</label>
                                     <select class="form-select" id="flight" name="flight">
-                                        <option value="sin-escala" <%= flight === 'sin escala' ? 'selected' : '' %>>Sin escala</option>
-                                        <option value="con-escala" <%= flight === 'con escala' ? 'selected' : '' %>>Con escala</option>
+                                        <option value="sin-escala" <%= product.flight === 'sin escala' ? 'selected' : '' %>>Sin escala</option>
+                                        <option value="con-escala" <%= product.flight === 'con escala' ? 'selected' : '' %>>Con escala</option>
                                     </select>
                                 </div>
 

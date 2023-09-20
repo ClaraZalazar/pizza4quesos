@@ -27,25 +27,30 @@
                     <form action="" method="POST" enctype="multipart/form-data">
                         <div class="mb-3">
                             <label for="placeName" class="form-label">Lugar</label>
-                            <input type="text" class="form-control" id="placeName" name="country"
-                                required />
+                            <input type="text" class="form-control <%= locals.errors ? (errors.country ? 'is-invalid' : 'is-valid') : '' %>" id="placeName" name="country" value="<%= locals.old && (old.country && old.country) %>"/>
+                            <small class="text-warning fs-6"> <%= locals.errors && (errors.country && errors.country.msg) %> </small>
                         </div>
 
                         <div class="mb-3">
                             <label for="hotelName" class="form-label">Hotel</label>
-                            <input type="text" class="form-control" id="hotelName" name="hotel"
-                                required />
+                            <input type="text" class="form-control <%= locals.errors ? (errors.hotel ? 'is-invalid' : 'is-valid') : '' %>" id="hotelName" name="hotel" value="<%= locals.old && (old.hotel && old.hotel) %>"/>
+                            <small class="text-warning fs-6"> <%= locals.errors && (errors.hotel && errors.hotel.msg) %> </small>
                         </div>
 
+                        <!-- categoria -->
                         <div class="mb-3">
                             <label for="categoryName" class="form-label">Categoria</label>
-                            <input type="text" class="form-control" id="categoryName" name="category"
-                                required />
+                            <select class="form-select" id="categoryName" name="category">
+                                <option selected hidden value="">Seleccione...</option>
+                                <option value="pais">Pais</option>
+                                <option value="hotel">Hotel</option>
+                            </select>
                         </div>
 
                         <div class="mb-3">
                             <label for="flights" class="form-label">Vuelos</label>
                             <select class="form-select" id="flights" name="flights">
+                                <option selected hidden value="">Seleccione...</option>
                                 <option value="sin-escala">Sin escala</option>
                                 <option value="con-escala">Con escala</option>
                             </select>
@@ -53,20 +58,20 @@
 
                         <div class="mb-3">
                             <label for="productDescription" class="form-label">Descripción</label>
-                            <textarea class="form-control" id="productDescription" style="resize: none"
-                                name="description" required></textarea>
+                            <textarea class="form-control <%= locals.errors ? (errors.description ? 'is-invalid' : 'is-valid') : '' %>" id="productDescription" style="resize: none" name="description"><%= locals.old && (old.description && old.description) %></textarea>
+                            <small class="text-warning fs-6"> <%= locals.errors && (errors.description && errors.description.msg) %> </small>
                         </div>
 
                         <div class="mb-3">
                             <label for="productPrice" class="form-label">Precio</label>
-                            <input type="number" class="form-control" id="productPrice" name="price"
-                                min="0" step="0.01" required />
+                            <input type="number" class="form-control <%= locals.errors ? (errors.price ? 'is-invalid' : 'is-valid') : '' %>" id="productPrice" name="price" min="0" step="0.01" value="<%= locals.old && (old.price && old.price) %>"/>
+                            <small class="text-warning fs-6"> <%= locals.errors && (errors.price && errors.price.msg) %> </small>
                         </div>
 
                         <div class="mb-3">
                             <label for="productDiscount" class="form-label">Descuento</label>
                             <input type="number" class="form-control" id="productDiscount"
-                                name="discount" min="0" max="100" required />
+                                name="discount" min="0" max="100"  />
                         </div>
 
                         <div class="d-flex justify-content-between mb-3">
@@ -77,6 +82,7 @@
                                 Guardar cambios
                             </button>
                         </div>
+                        <small class="text-warning fs-6"> <%= locals.errors && (errors.productImage && errors.productImage.msg) %> </small>
                     </form>
                 </div>
             </div>

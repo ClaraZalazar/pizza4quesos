@@ -23,5 +23,10 @@ module.exports = {
       return res.render('dashboard', {
           products
       })
+  },
+  vuelos : (req, res) => {
+    return res.render('vuelos', {
+      products,
+    });
   }
 }

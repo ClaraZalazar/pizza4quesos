@@ -13,22 +13,24 @@
             <section>
                 <div class="form-box">
                     <div class="form-value">
-                        <form action="/">
+                        <form method="post">
                             <h2 class="h2">Ingresá a tu cuenta</h2>
                             <div class="inputbox">
                                 <label for="">Email</label>
-                                <input type="email" required>
+                                <input type="email" class="form-control <%= locals.errors && (errors.email && 'is-invalid') %>"  id="email" name="email">
+                                <small class="text-warning fs-6"> <%= locals.errors && (errors.email && errors.email.msg) %> </small>
                             </div>
                             <div class="inputbox">
-                                <label for="">Contraseña</label>
-                                <input type="password" required>
+                                <label for="password">Contraseña</label>
+                                <input type="password" class="form-control <%= locals.errors && (errors.password && 'is-invalid') %>" id="password" name="password">
+                                <small class="text-warning fs-6"> <%= locals.errors && (errors.password && errors.password.msg) %> </small>
                             </div>
                             <div class="forget__checkbox">
-                                <label for=""><input type="checkbox">Recuerdame</label>
-                                <a href="#"></a>
+                                <input type="checkbox" value="" id="remember" name="remember">
+                                <label for="remember">Recuerdame</label>
                             </div>
                             <div class="botton__login">
-                                <button>Ingresar</button>
+                                <button type="submit">Ingresar</button>
                             </div>
                             <div class="bottons__login--register">
                                 <button>Olvidé mi contraseña</button>

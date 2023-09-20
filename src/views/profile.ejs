@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head',{ title : 'Editar perfil' }) %>
+
+<body style="
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+">
+
+<%- include('./partials/header') %>
+
+<main class="flex-grow-1 d-flex justify-content-center align-items-center"
+    style="background-image: url('/images/jong-marshes-79mNMAvSORg-unsplash.jpg'); background-size: cover; background-position: center;">
+    <!-- Contenedor del formulario -->
+    <div class="container" style="margin-top: 20px; margin-bottom: 20px;">
+        <div class="row">
+            <div class="col-md-7 col-lg-5 mx-auto">
+                <div class="card border rounded">
+                    <div class="card-header bg-white">
+                        <h4 class="card-title">Perfil de Usuario</h4>
+                    </div>
+                    <div class="card-body">
+                        <form action="" method="POST" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" class="form-control" id="nombre" name="name"
+                                    placeholder="Ingrese su nombre" value="<%= name %>">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="apellido">Apellido:</label>
+                                <input type="text" class="form-control" id="apellido" name="surname"
+                                    placeholder="Ingrese su apellido" value="<%= surname %>">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                                <input type="date" class="form-control" id="fechaNacimiento" name="birthday"
+                                    >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="teléfono">Número de teléfono:</label>
+                                <input type="text" class="form-control" id="teléfono" name="telefono"
+                                    placeholder="Ingrese su Número de teléfono">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Género:</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="genero" id="generoMasculino"
+                                        value="Masculino" >
+                                    <label class="form-check-label" for="generoMasculino">
+                                        Masculino
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="genero" id="generoFemenino"
+                                        value="Femenino" >
+                                    <label class="form-check-label" for="generoFemenino">
+                                        Femenino
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="asiento" class="form-label">Preferencias de asiento en vuelos</label>
+                                <select class="form-select" id="asiento" name="asiento">
+                                    <option value="ventana" <%= asiento === 'ventana' ? 'selected' : '' %>>ventana</option>
+                                    <option value="pasillo" <%= asiento === 'pasillo' ? 'selected' : '' %>>pasillo</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="suscripcion">Quiero recibir más información con ofertas y descuentos de
+                                    paquetes:</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="suscripcion" id="suscripcionSi"
+                                        value="si" >
+                                    <label class="form-check-label" for="suscripcionSi">Sí</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="suscripcion" id="suscripcionNo"
+                                        value="no" >
+                                    <label class="form-check-label" for="suscripcionNo">No</label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="fotoPerfil">Foto de Perfil:</label>
+                                <input type="file" class="form-control-file" id="fotoPerfil" name="profilePicture">
+                                <img src="/images/users/PERFIL-VACIO.png" width="150px" alt="Foto de perfil"
+                                    class="profile-img mt-2" id="previewFotoPerfil">
+                            </div>
+                        
+                            <!-- <button type="submit">Guardar</button> -->
+                            <div class="d-flex justify-content-between mb-3">
+                                <button class="btn btn-dark" type="submit">Guardar</button>
+                            </div>
+                            
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<%- include('partials/footer') %>
+
+</body>
+
+</html>

@@ -1,18 +1,18 @@
 [
    {
-      "id": 1,
+      "id": "186aa48f-7c62-cc-ab84-b13cbfc6f5a8",
       "country": "Francia",
       "category": "pais",
       "hotel": "Transilvania",
       "price": 50900,
       "description": "Viaja a parís un lugar divino para pasar tus vacaciones!",
-      "image": "1692984712562_products_.jpg",
-      "flight": "con-escala",
+      "image": "1694793867152_products_.jpg",
+      "flight": "sin-escala",
       "discount": 10,
-      "updatedAt": "2023-08-25T17:31:52.569Z"
+      "updatedAt": "2023-09-15T16:26:35.359Z"
    },
    {
-      "id": 2,
+      "id": "975aa21f-7c62-cc-ab84-j13cbfc6f5a8",
       "country": "Estados Unidos",
       "category": "pais",
       "hotel": "Nueva Chicago",
@@ -24,7 +24,7 @@
       "updatedAt": "2023-08-25T17:37:26.202Z"
    },
    {
-      "id": 3,
+      "id": "384aa21f-8g62-cc-ab84-b13cbfc6f5a8",
       "country": "Italia",
       "category": "pais",
       "hotel": "Coliseo Hotel",
@@ -36,7 +36,7 @@
       "updatedAt": "2023-08-25T17:39:37.356Z"
    },
    {
-      "id": 4,
+      "id": "384aa21f-7c62-cc-ab97-b13cbfc6f5a8",
       "country": "Japon",
       "category": "pais",
       "hotel": "Tokyo Hotel",
@@ -48,7 +48,7 @@
       "updatedAt": "2023-08-25T17:43:22.641Z"
    },
    {
-      "id": 5,
+      "id": "384aa21f-7c62-89gk-ab84-b13cbfc6f5a8",
       "country": "Argentina",
       "category": "pais",
       "hotel": "Argentino Hotel",
@@ -60,7 +60,7 @@
       "updatedAt": "2023-08-25T17:45:11.447Z"
    },
    {
-      "id": 6,
+      "id": "884vk21f-7c62-42cc-ab84-b13cbfc6f5a8",
       "country": "Inglaterra",
       "category": "pais",
       "hotel": "City Hotel",
@@ -72,7 +72,7 @@
       "updatedAt": "2023-08-25T17:48:19.093Z"
    },
    {
-      "id": 7,
+      "id": "384aa21f-5h87-42cc-ab83-b13cbfc6f5a8",
       "country": "Rusia",
       "category": "pais",
       "hotel": "Moscow Hotel",
@@ -84,7 +84,7 @@
       "updatedAt": "2023-08-25T17:50:16.980Z"
    },
    {
-      "id": 8,
+      "id": "725aa21f-7c62-42cc-ab84-b13cbfc6f5a8",
       "country": "India",
       "category": "pais",
       "hotel": "Taj Mahal Hotel",
@@ -96,7 +96,7 @@
       "updatedAt": "2023-08-25T18:04:00.251Z"
    },
    {
-      "id": 9,
+      "id": "384aa21f-7c62-42cc-ab84-b67fghc6f5a8",
       "country": "Egipto",
       "category": "pais",
       "hotel": "Cairo Hotel",
@@ -108,154 +108,133 @@
       "updatedAt": "2023-08-25T18:09:58.977Z"
    },
    {
-      "id": 10,
+      "id": "384ga34f-7c62-42cc-ab84-b13cbfc6f5a8",
       "country": "Australia",
       "category": "pais",
       "hotel": "Sidney Hotel",
       "parts": "Lorem",
       "flight": "sin-escala",
       "description": "Viaja a Australia un lugar divino para pasar tus vacaciones!",
-      "promotion": "Habitaciones cuadruples / varios tipos de camas",
       "price": 110000,
       "discount": 20,
       "image": "1692987216230_products_.jpg",
       "updatedAt": "2023-08-25T18:13:36.239Z"
    },
    {
-      "id": 11,
+      "id": "384aa21f-7c62-42cc-ab84-b13dbhj6f5a8",
       "country": "Francia",
       "category": "hotel",
       "hotel": "Transilvania",
-      "parts": "4 habitaciones",
       "flight": "sin-escala",
       "description": "Excelente hotel para pasar las vaciones en Francia!",
-      "promotion": "Habitaciones cuadruples / varios tipos de camas",
       "price": 50900,
       "discount": 10,
       "image": "1692989698963_products_.jpg",
       "updatedAt": "2023-08-25T18:54:58.970Z"
    },
    {
-      "id": 12,
+      "id": "384aa21f-7c62-42cc-ab84-b13casdc6f5a8",
       "country": "Estados Unidos",
       "category": "hotel",
       "hotel": "Nueva Chicago",
-      "parts": "4 habitaciones",
       "flight": "sin-escala",
       "description": "Excelente hotel para pasar las vaciones en EE.UU!",
-      "promotion": "Habitaciones cuadruples / varios tipos de camas",
       "price": 30000,
       "discount": 13,
       "image": "1692990116500_products_.jpg",
       "updatedAt": "2023-08-25T19:01:56.507Z"
    },
    {
-      "id": 13,
+      "id": "384aa21f-7c62-45cc-ab78-b13cbfc6f5a8",
       "country": "Italia",
       "category": "hotel",
       "hotel": "Coliseo Hotel",
-      "parts": "4 habitaciones",
       "flight": "sin-escala",
       "description": "Excelente hotel para pasar las vaciones en Italia!",
-      "promotion": "Habitaciones cuadruples / varios tipos de camas",
       "price": 70000,
       "discount": 0,
       "image": "1692990313472_products_.jpg",
       "updatedAt": "2023-08-25T19:05:13.478Z"
    },
    {
-      "id": 14,
+      "id": "384aa21f-7c62-42cc-ab84-b67cbfc6f5a8",
       "country": "Japon",
       "category": "hotel",
       "hotel": "Tokyo Hotel",
-      "parts": "4 habitaciones",
       "flight": "sin-escala",
       "description": "Excelente hotel para pasar las vaciones en Japon!",
-      "promotion": "Habitaciones cuadruples / varios tipos de camas",
       "price": 90000,
       "discount": 5,
       "image": "1692990477810_products_.jpg",
       "updatedAt": "2023-08-25T19:07:57.850Z"
    },
    {
-      "id": 15,
+      "id": "384aa21f-7c62-42cc-ab67-b13cbfc6f5a8",
       "country": "Argentina",
       "category": "hotel",
       "hotel": "Argentino Hotel",
-      "parts": "4 habitaciones",
       "flight": "sin-escala",
       "description": "Excelente hotel para pasar las vaciones en Argentina!",
-      "promotion": "Habitaciones cuadruples / varios tipos de camas",
       "price": 50900,
       "discount": 23,
       "image": "1692990423538_products_.jpg",
       "updatedAt": "2023-08-25T19:07:03.545Z"
    },
    {
-      "id": 16,
+      "id": "384aa51f-7c62-42cc-ab84-b13cbfc6f5a8",
       "country": "Inglaterra",
       "category": "hotel",
       "hotel": "City Hotel",
-      "parts": "4 habitaciones",
       "flight": "sin-escala",
       "description": "Excelente hotel para pasar las vaciones en Inglaterra!",
-      "promotion": "Habitaciones cuadruples / varios tipos de camas",
       "price": 80900,
       "discount": 50,
       "image": "1692990548028_products_.jpg",
       "updatedAt": "2023-08-25T19:09:08.034Z"
    },
    {
-      "id": 17,
+      "id": "784aa21f-7c62-42cc-ab84-b13cbfc6f5a8",
       "country": "Rusia",
       "category": "hotel",
       "hotel": "Moscow Hotel",
-      "parts": "4 habitaciones",
       "flight": "sin-escala",
       "description": "Excelente hotel para pasar las vaciones en Rusia!",
-      "promotion": "Habitaciones cuadruples / varios tipos de camas",
       "price": 90000,
       "discount": 10,
       "image": "1692990585141_products_.jpg",
       "updatedAt": "2023-08-25T19:09:45.151Z"
    },
    {
-      "id": 18,
+      "id": "384aa21f-7c62-45cc-ab84-b13cbfc6f5a8",
       "country": "India",
       "category": "hotel",
       "hotel": "Taj Mahal Hotel",
-      "parts": "4 habitaciones",
       "flight": "sin-escala",
       "description": "Excelente hotel para pasar las vaciones en India!",
-      "promotion": "Habitaciones cuadruples / varios tipos de camas",
       "price": 100000,
       "discount": 23,
       "image": "1692990623522_products_.jpg",
       "updatedAt": "2023-08-25T19:10:23.528Z"
    },
    {
-      "id": 19,
+      "id": "384aa21f-5c62-42cc-ab84-b13cbfc6f5a8",
       "country": "Egipto",
       "category": "hotel",
       "hotel": "Cairo Hotel",
-      "parts": "4 habitaciones",
       "flight": "sin-escala",
       "description": "Excelente hotel para pasar las vaciones en Egipto!",
-      "promotion": "Habitaciones cuadruples / varios tipos de camas",
       "price": 10000,
       "discount": 10,
       "image": "1692990656722_products_.jpg",
       "updatedAt": "2023-08-25T19:10:56.730Z"
    },
    {
-      "id": 20,
+      "id": "384aa21f-7c62-42cc-ab84-b13cbfc6f5a7",
       "country": "Australia",
       "category": "hotel",
       "hotel": "Sidney Hotel",
-      "parts": "4 habitaciones",
       "flight": "sin-escala",
       "description": "Excelente hotel para pasar las vaciones en Australia!",
-      "promotion": "Habitaciones cuadruples / varios tipos de camas",
       "price": 110000,
       "discount": 20,
       "image": "1692990690223_products_.jpg",
