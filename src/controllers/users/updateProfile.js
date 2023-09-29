@@ -18,7 +18,8 @@ const { readJSON, writeJSON } = require("../../data");
      const { 
          name, 
          surname, 
-         birthday, 
+         birthday,
+         telefono, 
          genero, 
          asiento, 
          suscripcion, 
@@ -26,22 +27,22 @@ const { readJSON, writeJSON } = require("../../data");
      } = req.body;
 
      const updatedUser = users.map(user => {
-          if (user.id === req.session.userLogin.id) {
-        
-             return {
-                 ...user,
-                 name: name ? name.trim() : name,
-                 surname: surname ? surname.trim() : surname,
-                 birthday: birthday || birthday,
-                 genero: genero || genero,
-                 asiento: asiento || asiento,
-                 suscripcion: suscripcion || suscripcion,
-                 profilePicture: req.file ? req.file.filename : profilePicture
-             }
-         }
-         return user;
-     });
-
+        if (user.id === req.session.userLogin.id) {
+            return {
+                ...user,
+                name: name ? name.trim() : (user.name ? user.name.trim() : user.name),
+                surname: surname ? surname.trim() : (user.surname ? user.surname.trim() : user.surname),
+                birthday: birthday || user.birthday,
+                telefono: telefono ? telefono.trim() : (user.telefono ? user.telefono.trim() : user.telefono),
+                genero: genero || user.genero,
+                asiento: asiento || user.asiento,
+                suscripcion: suscripcion || user.suscripcion,
+                profilePicture: req.file ? req.file.filename : user.profilePicture
+            }
+        }
+        return user;
+    });
+    
      writeJSON(updatedUser, 'users.json');
     return res.redirect('/');
  };

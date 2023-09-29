@@ -56,17 +56,11 @@
    },
    {
       "id": "a4766a85-ceec-4c71-8adb-de6a36d68736",
-      "name": "Carmen",
-      "surname": "Costa",
       "email": "carmencosta@gmail.com",
       "password": "$2a$10$LEwnw9R.uAGymw3UuHnYy.rNLtYZhDWtuFoDeM8T4GH2PpZlcuxae",
       "rol": "user",
       "telefono": null,
-      "genero": null,
-      "asiento": null,
-      "suscripcion": null,
-      "fotoPerfil": null,
-      "birthday": null
+      "fotoPerfil": null
    },
    {
       "id": "011d1cd1-9e5e-4047-b930-af231ba3329a",
@@ -82,5 +76,14 @@
       "email": "clarazalazar@gmail.com",
       "password": "$2a$10$9qxeeA3e4KqKY6meVK712eyW07LHP9Y/vphoD00DyrIkv4JJf3MSS",
       "rol": "admin"
+   },
+   {
+      "id": "c939b269-72fb-4250-a638-c1c3b137d7a8",
+      "name": "Juan",
+      "surname": "Zalazar",
+      "email": "juanzalazar@gmail.com",
+      "password": "$2a$10$orPmNtE00RhFqKFL6OChRefRFZThs/rKAejQeW5zJcYo6fQaoFLFS",
+      "rol": "user",
+      "birthday": null
    }
 ]
