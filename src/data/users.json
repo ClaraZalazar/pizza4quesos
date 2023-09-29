@@ -79,11 +79,8 @@
    },
    {
       "id": "4f762b2f-9cdd-46a2-b808-e2c730613016",
-      "name": "Clara",
-      "surname": "Zalazar",
       "email": "clarazalazar@gmail.com",
       "password": "$2a$10$9qxeeA3e4KqKY6meVK712eyW07LHP9Y/vphoD00DyrIkv4JJf3MSS",
-      "rol": "admin",
-      "birthday": null
+      "rol": "admin"
    }
 ]
