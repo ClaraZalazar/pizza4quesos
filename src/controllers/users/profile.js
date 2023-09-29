@@ -10,7 +10,7 @@ const { readJSON } = require("../../data")
         const genero = "genero del usuario";
         const asiento = "preferencia de asiento del usuario";
         const suscripcion = "preferencia de suscripcion del usuario";
-        const fotoPerfil = "foto del perfil del usuario";
+        const profilePicture = "foto del perfil del usuario";
         const birthday = "cumpleaños del usuario";
 
 
@@ -23,8 +23,7 @@ const { readJSON } = require("../../data")
             genero:user.genero,
             asiento: user.asiento,
             suscripcion: user.suscripcion,
-            fotoPerfil: user.fotoPerfil,
+            profilePicture: user.profilePicture,
             birthday: user.birthday
         })
     }
-    

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- head -->
+<%- include('./partials/head',{ title : 'Hoteles' }) %>
+
+    <body>
+        <!-- header -->
+        <%- include('./partials/header') %>
+            <!-- cuerpo de pagina -->
+    <main>
+        <div class="contenedor">
+            <label class="buscador">
+                <form action="/search" method="get">
+                    <input type="text" name="keywords" placeholder="Buscar...">
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </label>
+
+            
+            <!-- banner slider-->
+            <section class="container-slider">
+                <%-include('./partials/slider-banner') %>
+            </section>
+<!-- Hoteles recomendados mobile slider -->
+<section class="contenedor-primer-carrusel">
+    <div class="swiper-container mySwiper">
+        <h3>Hoteles Recomendados para ti </h3>
+        <div class="swiper-wrapper">
+            <% products.forEach(product => { %>
+                <%-include('./partials/cards-slider-hotel-mobile',{
+                    ...product
+                }) %>
+            <% }) %>
+        </div>
+    </div>
+</section>
+<!-- lugares recomendados mobile slider -->
+<section class="contenedor-primer-carrusel">
+    <div class="swiper-container mySwiper">
+        <h3>Lugares recomendados</h3>
+        <div class="swiper-wrapper">
+            <% products.forEach(product => { %>
+                <%-include('./partials/cards-slider-lugar-mobile',{
+                    ...product
+                }) %>
+            <% }) %>
+        </div>
+    </div>
+</section>
+
+    <!-- cards solo vista desktop LUGARES -->
+<section class="contenedor-card"> 
+    <h3>Lugares Recomendados para ti </h3>
+    <div class="row row-cols-1 row-cols-xl-2-1 row-cols-xxl-5 row-cols-lg-2 g-4 segunda-tarjeta-desktop">
+        <% products.forEach(product => { %>
+                <%-include('./partials/cards-lugar-index',{
+                    ...product
+                }) %>
+        <% }) %>
+    </div>
+</section>
+<!-- cards solo vista desktop HOTELES  -->
+<section class="contenedor-card">
+    <h3>Hoteles recomendados para ti</h3>
+    <div class="row row-cols-1 row-cols-xl-2-1 row-cols-xxl-5 row-cols-lg-2 g-4 segunda-tarjeta-desktop">
+        <% products.forEach(product => { %>
+                <%-include('./partials/cards-hotel-index',{
+                    ...product
+                }) %>
+        <% }) %>
+    </div>
+</section>
+    </main>
+
+
+    <!-- footer -->
+    <%- include('./partials/footer') %>
+    <!-- scripts-->
+    <%- include('./partials/scripts') %>
+    </body>
+
+</html>

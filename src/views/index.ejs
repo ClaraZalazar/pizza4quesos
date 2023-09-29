@@ -14,9 +14,10 @@
             <label class="buscador">
                 <form action="/search" method="get">
                     <input type="text" name="keywords" placeholder="Buscar...">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
                 </form>
-                <button type="submit">Buscar</button>
             </label>
             <!-- banner slider -->
             <section class="container-slider">
@@ -54,13 +55,9 @@
                         <p>Económica</p>
                     </div>
                 </article>
-                <label>
+                <label style=" padding: 0px 0px 20px 0px;">
                     <input type="checkbox" name="hobby" value="Pescar">Ver fechas más baratas
                 </label>
-                <div class="contenedor-boton">
-                    <button type="submit">Buscar</button>
-                    <i class="fas fa-horizontal-rule"></i>
-                </div>
             </section>
         </div>
                 <!-- Carrusel top destinos -->
@@ -90,7 +87,7 @@
         <!-- Hoteles recomendados mobile slider -->
         <section class="contenedor-primer-carrusel">
             <div class="swiper-container mySwiper">
-                <h3>Hoteles Recomendados para ti </h3>
+                <h3>Hoteles recomendados para ti </h3>
                 <div class="swiper-wrapper">
                     <% products.forEach(product => { %>
                         <%-include('./partials/cards-slider-hotel-mobile',{
@@ -103,7 +100,7 @@
         <!-- lugares recomendados mobile slider -->
         <section class="contenedor-primer-carrusel">
             <div class="swiper-container mySwiper">
-                <h3>Lugares recomendados</h3>
+                <h3>Vuelos recomendados para ti</h3>
                 <div class="swiper-wrapper">
                     <% products.forEach(product => { %>
                         <%-include('./partials/cards-slider-lugar-mobile',{
@@ -114,14 +111,16 @@
             </div>
         </section>
 
-            <!-- cards solo vista desktop LUGARES -->
+            <!-- cards solo vista desktop VUELOS -->
         <section class="contenedor-card"> 
-            <h3>Lugares Recomendados para ti </h3>
+            <h3>Lugares recomendados para ti </h3>
             <div class="row row-cols-1 row-cols-xl-2-1 row-cols-xxl-5 row-cols-lg-2 g-4 segunda-tarjeta-desktop">
                 <% products.forEach(product => { %>
+                    <div class="col">
                         <%-include('./partials/cards-lugar-index',{
                             ...product
                         }) %>
+                    </div>
                 <% }) %>
             </div>
         </section>
@@ -130,9 +129,11 @@
             <h3>Hoteles recomendados para ti</h3>
             <div class="row row-cols-1 row-cols-xl-2-1 row-cols-xxl-5 row-cols-lg-2 g-4 segunda-tarjeta-desktop">
                 <% products.forEach(product => { %>
+                    <div class="col">
                         <%-include('./partials/cards-hotel-index',{
                             ...product
                         }) %>
+                    </div>
                 <% }) %>
             </div>
         </section>

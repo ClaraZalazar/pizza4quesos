@@ -7,7 +7,32 @@ main .contenedor{
 }
 /* se ve solo en desktop */
 main .contenedor .buscador{
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+}
+main .contenedor .buscador form{
+    background-color: #DDE7EA;
+    border-radius: 1rem;
+    margin-right: 0.5rem;
+}
+main .contenedor .buscador input{
+    background-color: #DDE7EA;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.2rem 0rem;
+}
+main .contenedor .buscador i{
+    position: relative;
+    padding-right: 0.2rem;
+}
+main .contenedor .buscador button{
+    background-color: #DDE7EA;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.4rem;
 }
 main .contenedor .banner{
     width: 90%;
@@ -136,18 +161,6 @@ main .banner .formas .calendario .vuelta{
 main .banner .formas .calendario .vuelta i{
     color: #bdbaba;
     font-size: 2rem;
-}
-/* BOTON BUSCAR */
-main .banner .contenedor-boton{
-    display: flex;
-    justify-content: center;
-    margin: 0.5rem 0rem;
-}
-main .banner .contenedor-boton button{
-    border: none;
-    background-color: var(--colorSecundario);
-    border-radius: 1rem;
-    padding: 0.2rem 1rem;
 }
 /* ESTILOS DE SLIDER BANNER DESKTOP*/
 .container-slider{
@@ -467,35 +480,6 @@ main .contenedor-desktop .carrusel-desktop{
 }
 /* responsive desktop */
 @media (min-width:1000px){
-    /* barra de busqueda */
-    main .contenedor .buscador{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-top: 1rem;
-        margin-bottom: 1rem;
-    }
-    main .contenedor .buscador form{
-        background-color: #DDE7EA;
-        border-radius: 1rem;
-        margin-right: 0.5rem;
-    }
-    main .contenedor .buscador input{
-        background-color: #DDE7EA;
-        border: none;
-        border-radius: 1rem;
-        padding: 0.2rem 0rem;
-    }
-    main .contenedor .buscador i{
-        position: relative;
-        padding-right: 0.2rem;
-    }
-    main .contenedor .buscador button{
-        background-color: #DDE7EA;
-        border: none;
-        border-radius: 1rem;
-        padding: 0.4rem;
-    }
     /* desaparece banner de mobile y teablet */
     main .contenedor .banner .destinos{
         display: none;
@@ -504,9 +488,6 @@ main .contenedor-desktop .carrusel-desktop{
         display: none;
     }
     main .contenedor .banner .formas{
-        display: none;
-    }
-    main .contenedor .banner .contenedor-boton{
         display: none;
     }
     main .contenedor .banner label{

@@ -28,5 +28,10 @@ module.exports = {
     return res.render('vuelos', {
       products,
     });
+  },
+  hotels : (req, res) => {
+    return res.render('hotels', {
+      products,
+    });
   }
 }

@@ -7,4 +7,6 @@
 @import './login.css';
 @import './shoppingCart.css';
 @import './productDetail.css';
-@import './productForms.css'
+@import './productForms.css';
+@import './results.css';
+@import './404.css';

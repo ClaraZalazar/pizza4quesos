@@ -42,26 +42,48 @@
    },
    {
       "id": "911f75f9-b226-4496-b628-f58df998c535",
-      "profilePicture": null
+      "name": "cindy",
+      "surname": "nunske",
+      "email": "cindynuske@gmail.com",
+      "password": "$2a$10$U/tlij0PL6xcudgkRrAQweHNK83AW5CiTQeBqoQpcU/rcbK9UuV5K",
+      "rol": "user",
+      "telefono": null,
+      "genero": null,
+      "asiento": null,
+      "suscripcion": null,
+      "fotoPerfil": null,
+      "birthday": null
    },
    {
       "id": "a4766a85-ceec-4c71-8adb-de6a36d68736",
-      "profilePicture": null
+      "name": "Carmen",
+      "surname": "Costa",
+      "email": "carmencosta@gmail.com",
+      "password": "$2a$10$LEwnw9R.uAGymw3UuHnYy.rNLtYZhDWtuFoDeM8T4GH2PpZlcuxae",
+      "rol": "user",
+      "telefono": null,
+      "genero": null,
+      "asiento": null,
+      "suscripcion": null,
+      "fotoPerfil": null,
+      "birthday": null
    },
    {
-      "id": "6ac0ba88-fb71-4c22-9cef-d4bf60427d19",
-      "profilePicture": null
+      "id": "011d1cd1-9e5e-4047-b930-af231ba3329a",
+      "name": "sergio",
+      "surname": "prieto",
+      "email": "sergio@gmail.com",
+      "password": "$2a$10$9lIR3aHaD9TrCdwY0S6HzuDNaXyj/zdvPELtnqCWN8dIIsiYYp2eW",
+      "rol": "user",
+      "birthday": null
    },
    {
-      "id": "16ee9e6b-190b-44ad-957a-49d0c7bf536f",
-      "profilePicture": null
-   },
-   {
-      "id": "de29928f-4898-4e46-8f6e-8bb63e359da2",
-      "profilePicture": null
-   },
-   {
-      "id": "2799db10-8c12-4552-b3d3-5c7abc31faef",
-      "profilePicture": null
+      "id": "4f762b2f-9cdd-46a2-b808-e2c730613016",
+      "name": "Clara",
+      "surname": "Zalazar",
+      "email": "clarazalazar@gmail.com",
+      "password": "$2a$10$9qxeeA3e4KqKY6meVK712eyW07LHP9Y/vphoD00DyrIkv4JJf3MSS",
+      "rol": "admin",
+      "birthday": null
    }
 ]

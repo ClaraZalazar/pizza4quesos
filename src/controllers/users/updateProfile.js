@@ -1,31 +1,47 @@
 const { readJSON, writeJSON } = require("../../data");
-const path = require('path');
+ const multer = require('multer');
+ const path = require('path');
 
-module.exports = async (req, res) => {
-    const users = readJSON('users.json');
+  const storage = multer.diskStorage({
+       destination: function (req, file, cb) {
+        cb(null, path.join(__dirname, '..', '..', 'public', 'images', 'users'));
+       },
+       filename: function (req, file, cb) {
+           cb(null, file.fieldname + '-' + Date.now() + path.extname(file.originalname));
+       }
+   });
 
-    if (req.file) {
-        console.log('Nombre del archivo:', req.file.filename);
-    } else {
-        console.log('No se cargó ningún archivo');
-    }
+ const upload = multer({ storage });
 
-    const updatedUser = {
-        id: req.session.userLogin.id,
-        name: req.body.name,
-        surname: req.body.surname,
-        birthday: req.body.birthday,
-        telefono: req.body.telefono,
-        genero: req.body.genero,
-        asiento: req.body.asiento,
-        suscripcion: req.body.suscripcion,
-        profilePicture: req.file ? req.file.filename : null
-    };
+     module.exports = (req, res) => {
+     const users = readJSON('users.json');
+     const { 
+         name, 
+         surname, 
+         birthday, 
+         genero, 
+         asiento, 
+         suscripcion, 
+         profilePicture 
+     } = req.body;
 
-    const userIndex = users.findIndex(user => user.id === req.session.userLogin.id);
-    users[userIndex] = updatedUser;
+     const updatedUser = users.map(user => {
+          if (user.id === req.session.userLogin.id) {
+        
+             return {
+                 ...user,
+                 name: name ? name.trim() : name,
+                 surname: surname ? surname.trim() : surname,
+                 birthday: birthday || birthday,
+                 genero: genero || genero,
+                 asiento: asiento || asiento,
+                 suscripcion: suscripcion || suscripcion,
+                 profilePicture: req.file ? req.file.filename : profilePicture
+             }
+         }
+         return user;
+     });
 
-    writeJSON(users, 'users.json');
-
-    res.redirect('/');
-};
+     writeJSON(updatedUser, 'users.json');
+    return res.redirect('/');
+ };

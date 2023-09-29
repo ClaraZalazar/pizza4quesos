@@ -12,7 +12,7 @@
                         <div class="nav nav-tabs" id="nav-tab" role="tablist">
                             <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
                                 data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
-                                aria-selected="true">Paises</button>
+                                aria-selected="true">Vuelos</button>
                             <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab"
                                 data-bs-target="#nav-profile" type="button" role="tab"
                                 aria-controls="nav-profile" aria-selected="false">Hoteles</button>
@@ -21,7 +21,7 @@
                                 aria-controls="nav-contact" aria-selected="false">Paquetes</button>
                         </div>
                         <div class="tab-content" id="nav-tabContent">
-                            <div class="tab-pane fade show active " id="nav-home" role="tabpanel"
+                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
                                 aria-labelledby="nav-home-tab" tabindex="0">
                                 <div class="d-flex flex-column gap-2 flex-md-row justify-content-between my-3">
                                     <a href="/products/add" class="btn btn-dark"><i class="fas fa-plus"></i>
@@ -41,7 +41,7 @@
                                                 <th scope="col">Acciones</th>
                                             </tr>
                                         </thead>
-                                        <!-- tabla de paises -->
+                                        <!-- tabla de vuelos -->
                                         <tbody>
                                             <% products.forEach(({ id, country, hotel, price, discount }, index)=> { %>
                                                 <tr>
